@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title> Pruebas </title>
+    <meta charset="UTF-8">
+    <style>
+
+  body {
+   font: 1em Helvetica;
+   background: black;
+  }
+
+  #main {
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+
+
+   article {
+<!-- PONER MARGEN auto PUES OTRO VALOR NO TIENE EFECTO EN LOS FLEX. USAR PADDING EN LUGAR DE MARGENES-->
+    margin:auto;
+    padding: 0 20px;
+/*     border: 2px solid #cccc33; */
+    border-radius: 7pt;
+    font-size:1.3em;
+    background: black;
+    -webkit-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-order: 2;
+            order: 2;
+  }
+
+   .videoflex70{
+     -webkit-width:50%;
+     -webkit-height:5%;
+      width:50%;
+      height:5%;
+     background:black;
+     color:red;
+     margin: 0% 0% 0% 20%;
+     padding:0em;
+
+     /* La anchura se puede ajustar al valor que queramos en %. La altura va en función de la altura del article, 5%, (hay que ir probando hasta ajustarla Y DEBEMOS HACERLO EN ÚLTIMO LUGAR para cuando se sepa la altura del flex) (no hacer caso a como se ve en Atom, mirar en el Chrome).
+     (A lo que sigue no hacer caso de momento) Como la proporcion entre la base y el alto debe ser 18/9 = 56.25% entonces la altura sera 0.70*9/16 = 39.38% . Tened en cuenta que la suma de 70% + 15% + 15% = 100% */
+   }
+   .imagenflex70{
+     width:70%;
+     margin:0% 15%;
+     background:black;
+     color:red;
+     padding:0em;
+
+     </*No poner heigth pues se descentra.La suma de los margenes izquierdo y derecho debe ser igual a width: 70% + 15% + 15% = 100%. A lo que sigue no hacer caso de momento -> Como la proporcion entre la base y el alto debe ser 16/9 = 56.25% por regla de tres la altura será 0.70*9/16 = 39.38% */
+   }
+
+
+  /* Si la anchura del dispositivo es inferior a 4 pulgadas se aplicarán estos nuevos estilos*/
+  @media all and (max-width: 4in) {
+
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+
+   article{
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+            margin: 0;
+            padding:0 0.5em;
+   }
+
+   .videoflex70 {
+     width:100%;
+     background:black;
+     color:white;
+     margin: 0% 0% 0% 0%;
+     padding:0%;
+  }
+  .imagenflex70 {
+    width:90%;
+    margin:0% 5% 0% 5%;
+    background:black;
+    color:white;
+    padding:0%;
+ }
+
+<!--body {font-size:0.8em} -->
+ </style>
+  </head>
+
+  <!-- ************* Inicio cuerpo *******************-->
+  <body>
+
+    <div id='main'>
+
+      <article>
+      <!-- Para copiar la url de Youtube abrimos el video en Youtube, Compartir, Marcar/Desmarcar las casillas que nos interesen y pulsar boton COPIAR. Para más opciones <consu></consu>ltar el documento YoutubeParametros -->
+
+        <div span class="videoflex70">
+          <embed  width="100%" height="100%"  src="https://www.youtube.com/embed/79JRQDK-sl0"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen >
+            </embed>
+        </div><br>
+
+        <p align="CENTER"><span style="color: #cc99ff;">Lectura del</span> <span style="color: #00ff00; font-size: 2em;"><strong>Acta de Concesión</strong> </span></p>
+        <p align="CENTER"><span style="color: #cc99ff; font-size: 1.8em;">de</span> <span style="font-size: 1.8em;"><span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;</strong></span> <span style="color: #cc99ff;">a</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEs</span>paña&#8221;</strong>
+        <br><br>
+
+            <div span class="videoflex70">
+             <embed width="100%" height="100%" src="https://www.youtube.com/embed/Tb-utjwjAzs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </embed>
+          </div>
+
+        <br><br>
+
+
+<p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">D. José Gabriel Ruiz, Secretario General de la Delegacion de Gobierno, de la Region de Murcia lee el acta, en la que el Delegado de Gobierno D. Joaquín Bascuñana García, hace entrega de la Marca España, al Presidente y Fundador de TunaEspaña &#8220;Don Dudo&#8221;:  Reunidos los miembros competentes de la Oficina del Alto Comisionado del Gobierno para la</span> <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span></strong>, <span style="color: #cc99ff;">dependiente del</span> <span style="color: #ff00ff;"><strong>Ministerio de Asuntos Exteriores</strong></span><span style="color: #cc99ff;">, hacen Constar, que la</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</strong></span> <span style="color: #cc99ff;">cultiva y promueve los valores, que</span> <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span> </strong><span style="color: #cc99ff;">alienta y patrocina, por lo que constituye una valiosa aportación, a la promoción de la imagen de España, tanto dentro como fuera de nuestras fronteras, y <strong>declara</strong> en consecuencia, a</span><strong><span style="color: #ff0000;"> &#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span></strong><span style="color: #cc99ff;"> Institución de Interes para la</span> <span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;.</strong></span> </span></span></span></span></p>
+<p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">Dado en Madrid a 19 de Diciembre de 2013.</span> </span></span></span></span></p>
+<p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">Firmado : El Director de la Oficina del alto comisionado del gobierno para la</span> <strong><span style="color: #ff0000;">&#8220;Marca España</span></strong><span style="color: #cc99ff;">&#8220;. Y para que asi conste se hace entrega en la Delegacion del Gobierno de España en la Region de Murcia, Del Titulo que acredita dicho Reconocimiento.</span></span></span></span></span></p>
+
+<br>
+<!-- Para copiar la url de la imagen abrimos Google Fotos y en menu Fotos pinchamos en la foto hasta que salga en grande; con el boton derecho seleccionamos del menu contextual la opcion Copiar direccion de imagen  -->
+      <div span class="imagenflex70">
+        <a
+        target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/tpJL09zlZbjFS4Yk-p7pa--7W0IVwCkWPXC9k7tMa7gMOTYUpprNh2oPuogHtIG3Wj3y34z_zWVNMDk9Q8cebQ3VqHJtm1NPmswMverC9YBXVIHZZmlhvNPQl00EQDJDpE79eBA-QemAPubiPFKQ2WJv0jS5AgnbXRIM5neEylvsfuEcgu8pAPU7zMHLIpD1RCBEZ2LBC-eTdDs_UztRms_4WE9M_3Cq1AXcrJldAeNmh50Y52-t1s4-gC-p6eAjbp1-n9lfaz-Qr7BBaBwycecy8VFbd2ViA4wBML9upKy3LvduhtDmemDVbK6YQo--xcYK_t4jzhXSz0sWmflOc9efetGCXqXHE3mVHlpmnm2C1uZXI1Y0-hJUlnjLNhmCYd2bHnUjLbXzK1QIV3QzAL8fAOhgj899kSktYkNZggoRM7yA9ZsZlOx2rEjbazvVUzKxZSIIuBJVP1tRgEV1omGtEZsxiwrDptMHlimo8bQIfHhy5PbnbqzAvxO1lsBN2L51s6ffdWoWrvu0rM_WvvcQS3MZUoWh6bvabYXeawPPlTAla3VvaRezcUqo6D3pB5bvVZf1s7h0yy--W9q3lUXINKV-AuOLh-NkC9Y=w649-h288-no" alt="TunaEspaña, Marca España,tunos.com, Certamen Tuna, buen tunar" >
+        </a>
+      </div>
+
+<p style="text-align: center;"><span style="color: #cc99ff; : 1em;">Reunion en Madrid, Ministerio Asuntos Exteriores y Cooperacion: Don Ignacio Garcia-Valdecasa (Asesor Del Alto Comisionado del Gobierno para la <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span></strong>) Don Niky Lauda (Vocal &#8220;TunaEspaña), Don Jose Angel Lopez Jorrin, Director Oficina del alto comisionado del Gobierno para La &#8220;Marca España&#8221;, con La Beca &#8220;TunaEspaña&#8221;,  &#8220;Don Dudo&#8221; (Presidente-Fundador de <strong><span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEspa</span>ña&#8221;)</span></strong>, Don Visedo (Secretario &#8220;TunaEspaña), Don RadioPita (Tesorero </span><span style="color: #cc99ff;"><span style="font-size: 14px;">&#8220;TunaEspaña&#8221;</span><span style="font-size: 14px;">)</span></span></p>
+<p style="text-align: center;"><span style="font-size: 0.2em; color: #000000;">.</span></p>
+<p align="CENTER"><span style="color: #ff0000; font-size: 1.2em;"><strong>&#8220;Marca España&#8221;</strong> es una <strong>política de Estado.</strong></span></p>
+<p style="text-align: center;"><span style="color: #cc99ff;">Su objetivo es <strong>mejorar la imagen de nuestro país</strong>, tanto en el interior como más allá de nuestras fronteras, en beneficio del bien común. En un mundo global, una <strong>buena imagen-país</strong> es un activo que sirve para respaldar la posición internacional de un Estado política, económica, cultural, social, científica y tecnológicamente.</span></p>
+<p style="text-align: center;"><span style="color: #ff00ff; font-size: 1.2em;"><span style="color: #00ff00;">Son</span> Embajadores de <span style="color: #00ff00;">&#8220;Marca España&#8221;</span> : <span style="color: #00ff00;">Rafael, Nadal, Placido Domingo, Fernando Alonso, Emilio Botin, Ferrán Adriá, José Carreras, Pau Gasol, Antonio Banderas, Real Madrid, Seleccion Española de Futbol</span>,,,,,,,</span></p>
+<p style="text-align: center;">.</p>
+
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/K0XO5jGZnkLxoT9Kk6VBIagswBgYwxe-GdR7aSb9r43gUEt3SDJYrG2lHjMZp6pOUwxB2oeo2NMVgOM5m4qcsxt6t4NC4xiaQ8itcC5U8i8RQ0cTchwmB4qiBX-duR1GCuYaxVrwf1CzsIR-eT4XYljII4xK3ah8bCQZzB2zIcsi9pgcjnC_a-zlsEgFWXR8Vt3echehVLrM7VcHU6NRe9AelZbkG_Be3PYjEgjsGc4x1uK6jUgGi8TtdMhFciE-ZKRIMJIfPENwK0P2IGklqonCtYwXxJ5O86FZ5ZwkT5PWsCFEPcpTdCFnmCrhdtuv5IWw2SzS0OWIfUhLQ18o5arfZWTCJYdNKbhg3P0J06n4pbWCAhtUfGNJASyTpxi0pJySTQ0Ksk_oBQR2HtaaElrXhilxW0mymLw1GAy9eOpsXsteZIhr8lRTg4T0HaAJ_jFWRH7MSCuyez0viRmajUCliUUjOqgDecMOpLRfu1grhJ0Vt3nQXd3688Dmum913RehVLv2Eepbxvz9u3EICe7iXjGWs16Tn8q3nBFHbteGDi23fKecqjsGi-BLlQHETHwg3XS5IKVvURwD44yadVB5-Yh2L14VFQjJYoQ=w497-h292-no" alt="03-Jose-Angel-Lopez-Jorrin-director-Oficina-Alto-Comisionado-para-la-marca-España-Don-Dudo-Presidente-Fundador-TunaEspaña" >
+  </a>
+</div>
+
+<p style="text-align: center;"><span style="color: #cc99ff;"><strong>Don Jose Angel Lopez Jorrin</strong>, Director Oficina del alto comisionado del Gobierno para La &#8220;<strong><span style="color: #ffff00;">Marca</span> <span style="color: #ff0000;">España</span></strong>&#8220;, con La Beca &#8220;TunaEspaña&#8221; y &#8220;<strong>Don Dudo&#8221; (</strong>Presidente-Fundador &#8220;<span style="color: #ff0000;"><strong>Tun<span style="color: #ffff00;">aEsp</span>aña</strong></span>&#8220;)</span></p>
+<p style="text-align: center;"><span style="font-size: 0.6em; color: #000000;">.</span></p>
+<p style="text-align: center;"><span style="font-size: 0.6px; color: #000000;">
+
+  <div span class="imagenflex70">
+    <a
+    target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/fexFh18s-NxpbKYcDz1BvcBT_A8m034vGn_NzLjlTEU6QhOgyVw-uVU9g8Po5m36EHaIehs8WuIZBrhZ6cOW1ff2nLO4C3LFFWKszBq2Hx-anjvfp5zYumtHI9PXqVkhNMKur6c3RL66fN2kV0ckHzzjfPcydeoLVdv9oFlIND9uNbezZG228AlzMklE-pSq4hniawL2KF1sPwCPMOMfiE-XBshLKU_I3HwsfmeE_2U-3pL-KErtOOAt0mHESTyQC-MInrnAvQljqBPGm6KTKFF0h8fieW90Dm2MRrxwag7cvpEC-BMLxB6jsFZ78mMXyz8AEiGeJEiqRJBVF2MJS6u5rGPxl1QaIP_i_cKzHS1MbQrXACvsrH6HgiF9fhC5CUlne3taKVytl8nLEDLz5fQ9zRMywGsfeSFcbrtuKlyfmBs-jaz70qANAfI-1zyfF2aWkZZGjEapKzmjZwk2h9KpsRceK9ILXkrQA7UagACt3cEIUEaDVc0UzCEuCmH9X3vchUOP9a-LD-JwnsFz6Ji1ze526sdodx7zDimdQO47vFqTrH3ZI2-3HnC7PcJ2TQ4TQIhrW-N5VgEmC8e0XjQkrf8PU9IK2CnmOlI=w324-h372-no"  alt="TunaEspaña, Marca España, Delegacion de Gobierno, Joaquin Bascuñana, 1" >
+    </a>
+  </div>
+
+<p align="CENTER"><span style="color: #c0c0c0; font-size: 1em;"><span style="font-family: Arial;"><strong>El Delegado del Gobierno D. <em>Joaquín Bascuñana</em> García, entrega a D. Dudo (Presidente &#8211; Fundador) el título que acredita a <span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span> como institución de interés para la promoción de España y nuestra pertenencia a <span style="color: #ff0000;">&#8220;Marca España&#8221;</span>.  </strong></span></span></p>
+<p align="CENTER">.</p>
+
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/XRCw6QmFTAoYB0o-je1idhhpnCvPMQj-T8ZYwTJUQKOSLYscWNlexXF-PgxVhV0toq7axW7Y4f9jRCpFzoFTPcAmHHEzhnAw5k0lsVvMQQCdwAa8tTZx_ZLcc_WH2Q67fGQhMeDMRWyvBKieEHOrYYW0Qud0Q_-4BIAKFKWBISEna8ubstCnU_wdy3_oVu4FB0EmueQAXwuAdPPOZYKDLUaAgYFHVR_He66iyLczPwI3ghnJtxg9Yy4vk6_CiLQXAcZ9jfPA-BRGXPCDN9NTahHjKliXt-26S0aovlpdLlu9Gm7bc7atBvjTosDfnxRwgjsddkH22jOzl4mVemzZr2_HOIOnl76gc6yYvTXnLUP9jst6iDIYt2IeCTg0m6LHzTizojY-VVMqy_7a1Rjqgl688Rk-WGbmSw75uQmpo3kbQby66OYrW8-4kF6dsr1NA8BY82EeggxolT8krg6OiKW3J9KgIa32QztsnB9k2eltUCStcD7Gn5XIsgdXyOqmRKAyCYGAY3ubPHm-n7TxqqfyXfCTESfH5XYYO5iBzG7SjsVfSmwAfs-RBtJk0dlfcIxVbzVbAzlSow9QZ2Z7sBMRq7TCtkZsaYN_obU=w500-h326-no"  alt="TunaEspaña, Marca España, Delegacion de Gobierno, Joaquin Bascuñana,Don Dudo" >
+  </a>
+</div>
+
+<p align="CENTER"><span style="color: #c0c0c0;">D. Dudo (Presidente &#8211; Fundador) entrega  La beca de <strong><span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span></strong> al Delegado del Gobierno D. <em>Joaquín Bascuñana</em> García.</span></p>
+<p align="CENTER">.</p>
+
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/esRuhWOMFv0rnytiRDlCmAtFvmAXWChT454E0VgcMz6pQBJSbY0IzJVu8Mqj3ew89o96IGa1M3UjA2AIGM58I9V9rTZKEYyDTFfQvrYd-2zsCdmretVz2E1Ero3BnmiJ6M6aYI4Wal-OapyEBD_7tpcdvTWuECpge_B845UR_tE1G77_WUPU0uhgIDhXqbsZsrwIk-FTCCeGHTtMZQeSsNsmnPiAm9NH7kBo6lkIehFJbLMX4pTIgQRyeNbohnsohZN30D0KJ4_UqxQvQ-A_QisM8O24Eup4C5VINjVrdzwNy7DkiDYHVBlJpKHbasdmZEotVSh-1TOhbflbVPoUew6aMqs2Mnk551I7FaA-Pk2OlEO59PiELz_PENozUs3xb-B9zac7azsTxpR6kLGYRvlaYZW7Pf3al4p_jFNzLfgjPjbKftJNFv5YDTxeU7tQsLFdmjQwTk1MstuTClv2zisg4NbQPdCNP20z6e_yIRJP4L8OQ6nG3ltzUEoIBLhOZV3bOKas6k8VkMEeINXW2RNcAcN0uMvKx6Zsfnfx2t8CNQaVH7roLZJY5iUu7zgplHt2JWhom1niV1wbluJ3I0CX6dV-_9rj7TEvRY4=w661-h338-no"  alt="TunaEspaña, Marca España, Delegacion de Gobierno, Joaquin Bascuñana, Guardia Civil, Policia Nacional, Universidad">
+  </a>
+</div>
+
+<p align="CENTER">.</p>
+<p align="CENTER"><span style="color: #c0c0c0;">El Acto de entrega del título que  acredita a</span> <strong><span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span></strong><span style="color: #c0c0c0;">como institución de interés para la promoción de España y nuestra pertenencia a <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span></strong>, se realizó en la Delegación, de Gobierno de España, donde estuvieron representadas  las tres instituciones del Estado Español, asi como La Universidad, y cuerpos de Seguridad del Estado (Policia Nacional, Guardia Civil)</span></p>
+<p align="CENTER"><span style="color: #ff0000; font-size: 1em;"><span style="font-family: Arial;"><strong><span style="color: #800000;">.<br />
+</span></strong></span></span></p>
+
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/moDm2kMIQIpmMpicEp-HlRN3RxngQCvHU3vF0PwVSaYom7RtzSlXB8Xo2jBqFFBWRBEiwE2OXJ97gCcYAU-5pu74zuQp5Ayj0Pw4OWJVb74O9qs4e3RZ8Gv6aAmFWajNg3hHPyR4iHl5ZouwTdHgB5R8mRZSJ3lc_bzTbWJpyzOJ5YL984hU6so32ZdRBnQ_bMJHOe7a4K6baHiKWVYz-DKJP7pzEsU2m-XzN6BcdEHb_5fUcGmrIdTA-DkAByMMl_R5420cCZ6ZsYnC7yCEHriwPesQ-cSvITjmhfPFnJuPFIZxLMGIIbvov7tZo7zM-td45_GiA1Qb1RUp0t6vT3V-ImBqehHzYctkjp_cHp2dLqQbUMzOJGnNl53mi5S6YO6q9SXDmaQVG074vQ9krYTVH4s5BhWIBHa5Z4gol4eC7dD0LF8_gMLRIqvPcGv4p8EmUhRopXlaf85SKeEMf8vfkmceEtmJxDgPhnvPNGlR4r7uvSWx13F1w2EKTEQiUWzUvvi74K9tOEXxdOvEOeNsYn3l8mFUCCbsQEoX4NDqPRwFvEd_xhlaCAW2_dISzI5sRmxi4ZqBmG4X3mNcV5cYxT_I7Zr8Kf39ITo=w570-h807-no"  alt="TunaEspaña, Don Dudo, Marca España, carlos ignacio Espinosa Celdran photo_2017-05-08_16-29-13 dism">
+  </a>
+</div>
+<br><br>
+
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/_0g54LPngcMq8v-anSnvh4vKvgLQo4-K3iGHAtDsPjVcQ2eWHG79kD7q5oK8UVt8GYt273_K-_JMbSPZwgUg83DtkUSOoJPo1ATvM-XOOzL3yXvtIasbI-_by1sS1dPSeaVtHNvvWbBgIzVpBa1inObjl14UJC8jAHGYL9xbebZ5BeHkfLrjIKbUHndP8YMXFLiH1csVkPydnB4uMyObJBfJlDNt2t8h3UBYom-vd3r_dlW1NG3XYZwcRc3F0isZT0wNP3z2g-HuK0mNJ_mHbWsmqD1rcDKmA8INW62Twz3G_VHMSdlM-oDO_Nexql6jg1jI8UpeXmsSx7ZjZZuzrkrpv1g-WUBWlOmpCEcwG8jB5iiahCA62qe-B3PiUb1IrkWnoGKcx9jMGShrsAWi9ErhgnybrbebTPnhtvqxzaLGh4gpVt_OTcfPe3ld_4j0VF89BRlhZo79lrf_kRWveG4AwuyzXQKpFuKabrFwdEt6t1EpvttFhhbWmVPuJ22i8xycoeXI62xEV2Y6MJj6hUByq1OvLXf26-BTqP8G_TgKnn_1uE8Ei-EbJIrLbcddDSkmc3uCqCgdEi9CRArJH8xVNEkw0H3a-yzZjPI=w693-h408-no"  alt="TunaEspaña, Marca España,70">
+  </a>
+</div>
+
+<p style="text-align: center;"><span style="font-size: 1em; color: #000000;"> </span></p>
+<p style="text-align: center;"><span style="font-size: 0.5em; color: #000000;"> .</span></p>
+<p style="text-align: center;"><span style="color: #c0c0c0;"><strong><span style="color: #ffcc00;">Rueda de Prensa, en el Rectorado de La Universidad de Murcia</span></strong>, para comunicar a la comunidad Universitaria, y medios de Comunicacion, la obtención, de tan alta distinción. El primero en comunicarlo, fue nuestro Excelentisimo y Magnifico Sr. <strong><span style="color: #ffcc00;">Rector de la Universidad</span> </strong>de Murcia <strong>D. Jose Antonio Cobacho Gomez</strong>, <strong>Catedratico de Derecho Civil</strong></span></p>
+
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/4FlpaiCnFH2THpiDOqhGPRma_MOYfLIMgJeWPFmfsLENVVWGg82U_x2io7iJHw0P6ot-PVXtbLhaJCoSD9AfAEto7QhbYIQiEwGWuufnmc7c1oak-8FoRPcnOsTDmQ0Ye1PTUOvIMDy9sDfRVt05gDE8QVpICDWH-3Tj8mhwGk2vtKzay6rBTwa6mpCNnQXxKlKl1qTaBqIb08uUJ2rBAWXUrHt34DEh_05Ov3i2IOVSNe2sIzFfSe5WT7uRaEP1Fs-INDUrTAe4l07a34wOviwpGt8yTFrv7rtEmEhU_Zw1yRoo6sLGwdWHBAn9YjGFbd1UJGFwdBw0UsfMDNe9ZEUr8QyJzSUShhf5dCv0nnIoxRT69MGkzQEGitUDZHI6bZQXpABmz624cUK0ZOYitLFpiroLNqXb2taWHXnnYF7rnoSzKWqnFxe9sOg-cqhzr6n14NuVrJng1wr5z8CEHRjqrFFz9KwXwLmrUWB0HhLiDRFsUGuDnj5jDBIa6pQ3Nh4kFEZY8una46rpBXrOGMPX9pzhTd9POFbs2qq7sdVppquiJnM0XbyYHYm1pRhz_azaost6of42PUJpGSFBIpWw_P3EQT5HF-smKEM=w566-h275-no"  alt="TunaEspaña, Rector Universidad Murcia, marca españa">
+  </a>
+</div>
+
+<p style="text-align: center;"><span style="color: #cc99ff;"><span style="color: #c0c0c0;">Rueda de Prensa, en el Rectorado Universidad de Murcia, presidida por Excelentisimo y Magnifico Sr. <strong><span style="color: #ffcc00;">Rector de la Universidad </span></strong>de Murcia <strong>D. Jose Antonio Cobacho Gomez</strong>, <strong>Catedratico de Derecho Civil</strong>, y por <strong> Dña. María de los Ángeles Esteban Abad</strong>,</span> <strong><span style="color: #ffcc00;">Vicerrectora de Coordinación y Comunicación</span></strong></span></p>
+
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/3MTRfWKSnQU-j2NxRIeeMe4WbVFPPk-MRLgva_r4qt2oso1iwhPF-7lqv_oUXfHYvgKAf7QrbIoxTfuckHXkseB8heNkTFXALRUsQz8fvsxyhXKCjjP14LQEtVEyL9pldHP_w8v5PUJqGOfFiu5xUxc6FMCQiVUAID62uIIcyhJwSZwuSNKIdVD5g0EhnmH2NT-fC5MQOvMAC8GHyXZ9TTLx-mZl5CGVlk4ZyYDjBNYvQYZACFQK2Q73WZPT2kD_9fe55eE3B1ML6aRbhQVEg02fuj-VoLNMdRex4fiSmY1QPpQfOPhmVU1D6CZNsC73rvwsK6xlJbR__2ofZ3FItw1WgoIGzIorpl9Y384lG8X5LC03dPvppaBfWcl6pGPkTL4EAFv_sJxO0UbcPn39QXCtzbHjkcMrThlQUJ-M4SVU6P3ArGNwyrydvWAPoyl6nKdmgC160bbCKFVG-FO7-HP-8RYtIYxhB3T1p1OsA-DSxj70iT9F1Alwepakw_qQGoB0U6u65D3hE0VKy6ccdOVPsAxwoPMZnkSLCfOtu4vdGEwHo8XRocug6DijoPRH9hPp-OsD0m5P_EPJgmJXEqvxYOs2EcSnHQS6uK0=w640-h260-no"  alt="TunaEspaña, Rector Universidad Murcia, marca españa, Rectorado Universidad de Murcia">
+  </a>
+</div>
+<br>
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/q7f_Wc4mknZ0n7BR4aFXM4XtKu-H56Uj9v0DCp8HQ19dT-_a_Ivpumk50ZYaKkuEVbahb2zKtH8siUsr5WQdoaq-cyfaeQQnhMacTq9dG0L3ZWg9GrIMaq0IIO5L9pMpXEQiY8D3BalIKy1K_DAwQsPSJjfCqMYeKKAN3K7k4PWYBVhSekGBo85Dn3PAtGL0t00ckOKjQubr8jAdU5X3nZLtXEhcJPgQbe6Xq_OiYqvLM-UUud2M2r7xUhZbCDNwXUr4vpVV0Mc4DX6OPue8u0af46aoOm0oiHAXYHhf6C6-c3ioIGD_GW6-xh8OAPZF_1s_7aJbTmT5M98kWAsb-DkvJHSs1wsP46KqoRSIksFj6iDasFl9BAoi3rGRINFAMH_2q9DMuZPaGOcA0Io74LCMs2YCOaUrBeVUN5TZe371fep1Pcj2l4b4cfV4SBgQUOWrgTuYehVJQMyTvHLLJmF4VmynSIjSPQNHIr3-6XTJD8KboFUulRg4Qo_dzLsVy0Qg3Ed3URdV06cmmFvtAa5iGcVdMsyUEQlEMZpHCKn4x4ukgTdMweDwNthOXeB6veiHVShwqot5bfgptPz43lHx2PWbuDE0_L4GiCg=w554-h393-no"  lt="MARCA ESPAÑA, dism, cancionero tuna, musica tuna, don dudo, tunaespaña, dism">
+  </a>
+</div>
+
+<p style="text-align: center;">.</p>
+<div span class="imagenflex70">
+  <a
+  target="_blank" href="nada"><img width="100%" heigth="100%" src="https://lh3.googleusercontent.com/q4103KycOa5vl60WQxe_dxy6CSSebHSQMDofxCPSzhHoT7PQj34XBRb2oxvNVaCsszww1lfgj-Fk5uUnAHUmBQtEdQwC6cna7PytE_YM3G87ii3Mr21OePUdcd3mPcrkUddzi-bywoaU8F07Kbr7TkpBrXCA_6_9FIl5gWHc4ND2gzO3gMYrXKAV3e_Hapjkd-DEXe0oF3KFz2WM8HXslZkHDg1knj1kj43JyVVqotEHYo9RyVO-ZhGnCtWPx-cvC58uftgRkwgTcYhyKrzczbJ65fHWr4MLEzpxm53Ym40Q4TCFtRUMmYGsZ7CqjxP5Fr7MiyQP_M0J-jo1ISMSXy7v8wm7TC1Zgw2p_bIQNz0ix0Wasx4OTFPZB_MdleAlJwYsq1tQbYrRKDiNLMt5-fN6LshAwZwAaqtu_t48lkj9BIn_opUtjamWTeDDKhDj5KQHX1msojNRoFUx0mBis2V-nJRQ15Blq2lEDhKraTowTcv-4ekQGRW8fjj1UFEbyXWsPvM8ToEhws5qvlEgxwDM0vsrCXsC7TzQGu_83Uq_dzYY_2dFL0EbDiI9qt-p8UWHxSCVow0Jb0HMDdLprdNvys4WsSE-FK_k514=w461-h359-no"  alt="TunaEspaña-Imposicion-Beca-Cancionero-Tuna-Musica-de-tuna-Universidad-Canciones-de-Tuna">
+  </a>
+</div>
+
+    </article>
+
+ </div>
+
+  </body>
+</html>

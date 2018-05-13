@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title> Pruebas </title>
+    <meta charset="UTF-8">
+    <style>
+
+  body {
+   font: 1em Helvetica;
+   background: black;
+  }
+
+  #main {
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+
+
+   article {
+<!-- PONER MARGEN auto PUES OTRO VALOR NO TIENE EFECTO EN LOS FLEX. USAR PADDING EN LUGAR DE MARGENES-->
+    margin:auto;
+    padding: 0 20px;
+/*     border: 2px solid #cccc33; */
+    border-radius: 7pt;
+    font-size:1.3em;
+    background: black;
+    -webkit-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-order: 2;
+            order: 2;
+  }
+
+  /* Si la anchura del dispositivo es inferior a 4 pulgadas se aplicarán estos nuevos estilos*/
+  @media all and (max-width: 3in) {
+
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+
+   article{
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+            margin: 0;
+            padding:0 0.5em;
+   }
+
+
+<!--body {font-size:0.8em} -->
+ </style>
+  </head>
+
+  <!-- ************* Inicio cuerpo *******************-->
+  <body>
+
+    <div id='main'>
+
+      <article>
+
+        <p align="CENTER"><span style="color: #cc99ff;">Lectura del</span> <span style="color: #00ff00; font-size: 2em;"><strong>Acta de Concesión</strong> </span></p>
+        <p align="CENTER"><span style="color: #cc99ff; font-size: 1.8em;">de</span> <span style="font-size: 1.8em;"><span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;</strong></span> <span style="color: #cc99ff;">a</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEs</span>paña&#8221;</strong>
+        <br><br>
+
+    </article>
+
+ </div>
+
+  </body>
+</html>
