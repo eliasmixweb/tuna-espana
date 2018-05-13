@@ -4,74 +4,18 @@
     <title> Pruebas </title>
     <meta charset="UTF-8">
     <style>
-
-  body {
-   font: 1em Helvetica;
-   background: black;
-  }
-
-  #main {
-   margin: 0px;
-   padding: 0px;
-   display: -webkit-flex;
-   display:         flex;
-   -webkit-flex-flow: row;
-           flex-flow: row;
-   }
-
-
-   article {
-<!-- PONER MARGEN auto PUES OTRO VALOR NO TIENE EFECTO EN LOS FLEX. USAR PADDING EN LUGAR DE MARGENES-->
-    margin:auto;
-    padding: 0 20px;
-/*     border: 2px solid #cccc33; */
-    border-radius: 7pt;
-    font-size:1em;
-    background: black;
-     color: white;
-    -webkit-flex: 1 1 100%;
-            flex: 1 1 100%;
-    -webkit-order: 2;
-            order: 2;
-  }
-
-  /* Si la anchura del dispositivo es inferior a 4 pulgadas se aplicarán estos nuevos estilos*/
-  @media all and (max-width: 5in) {
-
-   #main, #page {
-    -webkit-flex-flow: column;
-            flex-flow: column;
-   }
-
-   article{
-    /* Return them to document order */
-    -webkit-order: 0;
-            order: 0;
-            margin: 0;
-            padding:0 0.5em;
-            font-size:200%;
-   }
-
-
-<!--body {font-size:1em} -->
- </style>
+    body {
+    font: 32px Helvetica;
+     background: black;
+     color:white;
+    }
+    </style>
   </head>
 
   <!-- ************* Inicio cuerpo *******************-->
   <body>
-
-    <div id='main'>
-
-      <article>
           <p><span style="font-size: 32px;"> probando tamaño de letra a 32px por asignacion</p>
-        <p><span style="font-size: 4mm;"> probando tamaño de letra a 4mm</p>
-        <p align="CENTER"><span style="color: #cc99ff; font-size: 2em;">Lectura del </span> <span style="color: #00ff00; font-size: 3em;"><strong>Acta de Concesión</strong> </span></p>
-        <p align="CENTER"><span style="color: #cc99ff; font-size: 2em;">de</span> <span style="font-size: 2em;"><span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;</strong></span> <span style="color: #cc99ff;">a</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEs</span>paña&#8221;</strong>
-        <br><br>
-
-    </article>
-
- </div>
-
+        <p align="CENTER"><span style="color: #cc99ff;">Lectura del </span> <span style="color: #00ff00; font-size: 64em;"><strong>Acta de Concesión</strong> </span></p>
+        <p align="CENTER"><span style="color: #cc99ff; font-size: 32px;">de</span> <span style="font-size: 64px;"><span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;</strong></span> <span style="color: #cc99ff;">a</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEs</span>paña&#8221;</strong>
   </body>
 </html>
