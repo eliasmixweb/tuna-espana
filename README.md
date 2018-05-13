@@ -1,3 +1,3 @@
 # tuna-espana
 pruebas para la tuna
-Esto son pruebas siplemente
+<h1>Esto son pruebas simplemente</h1>
