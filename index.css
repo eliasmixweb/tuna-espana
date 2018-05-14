@@ -8,9 +8,9 @@ body {
   font-family: Arial, "Times New Roman", Times, serif;
   color: white;
   background-color: black;
-  font-size:16px; /* tamaño por defecto es 16px*/
+  font-size:16px;  /* tamaño por defecto es 16px*/
 }
-  @media (min-width: 768px) {
+  @media only screen (min-device-width: 768px) {
   body{
     width:100%;
     height:auto;
@@ -19,7 +19,7 @@ body {
     font-family: "Times New Roman", Times, Arial, serif;
     color: white;
     background-color: black;
-    font-size:32px; /* tamaño por defecto es 16px*/
+    font-size:50px; /* tamaño por defecto es 16px*/
 
 
   }
