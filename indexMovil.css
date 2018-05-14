@@ -5,24 +5,10 @@ body {
   width: 80%;
   margin: 0% 10% 0% 10%;
   padding: 5px;
-  font-family: Arial, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   background-color: black;
-  font-size:16px; /* tamaño por defecto es 16px*/
-}
-  @media screen and (max-width: 5in){
-  body{
-    width:100%;
-    height:auto;
-    margin:0px;
-    padding: 5px;
-    font-family: Arial, "Times New Roman", Times, serif;
-    color: white;
-    background-color: black;
-    font-size:32px; /* tamaño por defecto es 16px*/
-
-
-  }
+  font-size:32px;
 
   /*border: .2em solid black;*/
   }
