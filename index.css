@@ -12,7 +12,7 @@ background-color: black;
 font-size:50px; /* tamaño por defecto es 16px*/
 }
 
-  @media  screen and (min-width: 1080) {
+  @media  screen and (min-width: 800) {
   body{
     width: 80%;
     margin: 0% 10% 0% 10%;
