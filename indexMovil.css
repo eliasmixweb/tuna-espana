@@ -1,17 +1,15 @@
-html {
-  background-color: blue;
-}
 body {
-  width: 80%;
-  margin: 0% 10% 0% 10%;
-  padding: 5px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
-  background-color: black;
-  font-size:32px;
+width:100%;
+height:auto;
+margin:0px;
+padding: 5px;
+font-family: "Times New Roman", Times, Arial, serif;
+color: white;
+background-color: black;
+font-size:50px; /* tamaño por defecto es 16px*/
+}
 
-  /*border: .2em solid black;*/
-  }
+
   /*.exampleText {
     margin:0;
     padding:0;

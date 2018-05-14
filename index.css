@@ -1,29 +1,17 @@
-   <style>
 html {
-  background-color: blue;
+background-color: blue;
 }
-body {
-width:100%;
-height:auto;
-margin:0px;
-padding: 5px;
-font-family: "Times New Roman", Times, Arial, serif;
-color: white;
-background-color: black;
-font-size:50px; /* tamaño por defecto es 16px*/
-}
-@media all and (max-width: 4in) {
-  body{
-    width: 80%;
-    margin: 0% 10% 0% 10%;
-    padding: 5px;
-    font-family: Arial, "Times New Roman", Times, serif;
-    color: white;
-    background-color: black;
-    font-size:16px;  /* tamaño por defecto es 16px*/
+  body {
+  width:80%;
+  height:auto;
+  margin:0 10% 0 10%;
+  padding: 30px;
+  font-family: Arial, "Times New Roman", Times,  serif;
+  color: white;
+  background-color: black;
+  font-size:32px; /* tamaño por defecto es 16px*/
   }
-  }
-  </style>
+
   /*.exampleText {
     margin:0;
     padding:0;
