@@ -1,15 +1,11 @@
 html {
 background-color: blue;
 }
-  body {
-  width:70%;
-  height:auto;
-  margin:0 15% 0 15%;
-  padding: 30px;
-  font-family: Arial, "Times New Roman", Times,  serif;
-  color: white;
-  background-color: black;
-  font-size:32px; /* tamaño por defecto es 16px*/
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
   }
 
   /*.exampleText {
