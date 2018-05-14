@@ -1,3 +1,4 @@
+   <style>
 html {
   background-color: blue;
 }
@@ -11,8 +12,7 @@ color: white;
 background-color: black;
 font-size:50px; /* tamaño por defecto es 16px*/
 }
-
-  @media  screen and (min-width: 800) {
+@media all and (max-width: 4in) {
   body{
     width: 80%;
     margin: 0% 10% 0% 10%;
@@ -21,11 +21,9 @@ font-size:50px; /* tamaño por defecto es 16px*/
     color: white;
     background-color: black;
     font-size:16px;  /* tamaño por defecto es 16px*/
-
   }
-
-  /*border: .2em solid black;*/
   }
+  </style>
   /*.exampleText {
     margin:0;
     padding:0;
