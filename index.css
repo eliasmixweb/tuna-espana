@@ -2,25 +2,25 @@ html {
   background-color: blue;
 }
 body {
-  width: 80%;
-  margin: 0% 10% 0% 10%;
-  padding: 5px;
-  font-family: Arial, "Times New Roman", Times, serif;
-  color: white;
-  background-color: black;
-  font-size:16px;  /* tamaño por defecto es 16px*/
+width:100%;
+height:auto;
+margin:0px;
+padding: 5px;
+font-family: "Times New Roman", Times, Arial, serif;
+color: white;
+background-color: black;
+font-size:50px; /* tamaño por defecto es 16px*/
 }
-  @media  screen (min-width: 700) {
+  @media  screen and (min-width: 700) {
   body{
-    width:100%;
-    height:auto;
-    margin:0px;
+
+    width: 80%;
+    margin: 0% 10% 0% 10%;
     padding: 5px;
-    font-family: "Times New Roman", Times, Arial, serif;
+    font-family: Arial, "Times New Roman", Times, serif;
     color: white;
     background-color: black;
-    font-size:50px; /* tamaño por defecto es 16px*/
-
+    font-size:16px;  /* tamaño por defecto es 16px*/
 
   }
 
