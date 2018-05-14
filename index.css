@@ -16,7 +16,7 @@ body {
     height:auto;
     margin:0px;
     padding: 5px;
-    font-family: Arial, "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, Arial, serif;
     color: white;
     background-color: black;
     font-size:32px; /* tamaño por defecto es 16px*/
