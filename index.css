@@ -10,7 +10,7 @@ body {
   background-color: black;
   font-size:16px;  /* tamaño por defecto es 16px*/
 }
-  @media only screen and  (max-width: 720px) {
+  @media only screen and  (max-width: 719px) {
   body{
     width:100%;
     height:auto;
