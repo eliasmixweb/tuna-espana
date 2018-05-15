@@ -1,26 +1,79 @@
-html {
-background-color: blue;
-}
+
 body {
-width:100%;
-height:auto;
-margin:0;
-padding: 0px;
-font-family: Arial, "Times New Roman", Times,  serif;
-color: white;
-background-color: blue;
-font-size:32px; /* tamaño por defecto es 16px*/
+   font: 1em Helvetica;
+   background: #000000;
 }
+
+#main {
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+}
+
+nav {
+   margin: 2px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+   -webkit-flex: 1 1 10%;
+           flex: 1 1 10%;
+   -webkit-order: 1;
+           order: 1;
+  <!-- Significado de flex con 3 valores:  flex-grow / flex-shrink / flex-basis factor: crec. / contraccion / tamaño inicial  -->
+}
+
 article {
-  width:70%;
-  height:auto;
-  margin:0 15% 0 15%;
-  padding: 30px;
-  font-family: Arial, "Times New Roman", Times,  serif;
-  color: white;
-  background-color: black;
-  font-size:32px; /* tamaño por defecto es 16px*/
-  }
+  /* NO PONER MARGEN AUTO PUES SE DESBORDA article */
+    margin: 2px;
+    padding: 5px;
+    color: white;
+    /*border: 1px solid #cccc33;*/
+    border-radius: 7pt;
+    background: black;
+    -webkit-flex: 1 1 80%;
+            flex: 1 1 80%;
+    -webkit-order: 2;
+            order: 2;
+}
+
+aside {
+   margin: 2px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+   -webkit-flex: 1 1 10%;
+           flex: 1 1 10%;
+   -webkit-order: 3;
+           order: 3;
+           flex-direction: row;
+}
+
+header, footer {
+   margin: 4px;
+   padding: 5px;
+   min-height: 100px;
+   border: 1px solid #eebb55;
+   border-radius: 7pt;
+   background: #ffeebb;
+   display:block
+}
+.bloqIzq{
+display:block;
+margin: 10 10 10 0;
+float:left;
+}
+.bloqDer{
+display:block;
+margin: 10 10 10 0;
+float: right;
+}
+
+     /*No poner heigth pues se descentra.La suma de los margenes izquierdo y derecho debe ser igual a width. A lo que sigue no hacer caso de momento -> Como la proporcion entre la base y el alto debe ser 16/9 = 56.25% por regla de tres la altura será 0.70*9/16 = 39.38% */
 
   /*.exampleText {
     margin:0;

@@ -1,11 +1,41 @@
-
-.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+html {
+background-color: blue;
 }
+header, footer {
+  display: block;
+  margin: 4px;
+  padding: 4px;
+  min-height: 50px;
+  border: 1px solid #eebb55;
+  border-radius: 5pt;
+  background: #ffeebb;
   }
 
+body {
+width:100%;
+height:auto;
+margin:0;
+padding: 0px;
+font-family: Arial, "Times New Roman", Times,  serif;
+color: white;
+background-color: blue;
+font-size:32px; /* tamaño por defecto es 16px*/
+}
+article {
+  width:70%;
+  height:auto;
+  margin:0 15% 0 15%;
+  padding: 30px;
+  font-family: Arial, "Times New Roman", Times,  serif;
+  color: white;
+  background-color: black;
+  font-size:32px; /* tamaño por defecto es 16px*/
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+      width: auto/9; /* Bug de ie8 */
+  }
   /*.exampleText {
     margin:0;
     padding:0;
