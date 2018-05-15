@@ -1,4 +1,15 @@
+
 body {
+width:100%;
+height:auto;
+margin:0px;
+padding: 5px;
+font-family: "Times New Roman", Times, Arial, serif;
+color: white;
+background-color: black;
+font-size:50px; /* tamaño por defecto es 16px*/
+}
+.article {
 width:100%;
 height:auto;
 margin:0px;

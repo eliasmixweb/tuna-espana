@@ -1,7 +1,17 @@
 html {
 background-color: blue;
 }
-  body {
+body {
+width:100%;
+height:auto;
+margin:0;
+padding: 0px;
+font-family: Arial, "Times New Roman", Times,  serif;
+color: white;
+background-color: blue;
+font-size:32px; /* tamaño por defecto es 16px*/
+}
+article {
   width:70%;
   height:auto;
   margin:0 15% 0 15%;
