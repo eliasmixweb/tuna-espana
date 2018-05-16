@@ -19,8 +19,8 @@ nav {
    border: 1px solid #8888bb;
    border-radius: 7pt;
    background: #ccccff;
-   -webkit-flex: 1 1 10%;
-           flex: 1 1 10%;
+   -webkit-flex: 1 1 15%;
+           flex: 1 1 15%;
    -webkit-order: 1;
            order: 1;
   <!-- Significado de flex con 3 valores:  flex-grow / flex-shrink / flex-basis factor: crec. / contraccion / tamaño inicial  -->
@@ -34,8 +34,8 @@ article {
     /*border: 1px solid #cccc33;*/
     border-radius: 7pt;
     background: black;
-    -webkit-flex: 1 1 80%;
-            flex: 1 1 80%;
+    -webkit-flex: 1 1 70%;
+            flex: 1 1 70%;
     -webkit-order: 2;
             order: 2;
 }
@@ -46,32 +46,66 @@ aside {
    border: 1px solid #8888bb;
    border-radius: 7pt;
    background: #ccccff;
-   -webkit-flex: 1 1 10%;
-           flex: 1 1 10%;
+   -webkit-flex: 1 1 15%;
+           flex: 1 1 15%;
    -webkit-order: 3;
            order: 3;
            flex-direction: row;
 }
 
-header, footer {
+header {
+   padding: 0px;
+   margin:0;
+   border: 0 solid #eebb55;
+   border-radius: 7pt;
+   background: #ffeebb;
+
+}
+footer {
    margin: 4px;
    padding: 5px;
    min-height: 100px;
    border: 1px solid #eebb55;
    border-radius: 7pt;
    background: #ffeebb;
-   display:block
+   display:block;
+   text-align:center;
 }
-.bloqIzq{
+#cabe{
 display:block;
-margin: 10 10 10 0;
-float:left;
+background: blue;
+
 }
-.bloqDer{
-display:block;
-margin: 10 10 10 0;
-float: right;
+#cabecera {
+   margin: 0px;
+   padding: 0px;
+   display: flex;
+   flex-flow: row;
 }
+
+
+.flotante1{
+   border: 1px solid #ffffff;
+   margin: 1%;
+   flex:1 1 40%;
+   order:0;
+   color: white;
+}
+.flotante2{
+  border: 1px solid #ffffff;
+  margin: 1%;
+  flex:1 1 20%;
+  order:1;
+  color: white;
+}
+.flotante3{
+   border: 1px solid #ffffff;
+   margin: 1%;
+   flex:1 1 40%;
+   order:2;
+   color: white;
+}
+
 
      /*No poner heigth pues se descentra.La suma de los margenes izquierdo y derecho debe ser igual a width. A lo que sigue no hacer caso de momento -> Como la proporcion entre la base y el alto debe ser 16/9 = 56.25% por regla de tres la altura será 0.70*9/16 = 39.38% */
 

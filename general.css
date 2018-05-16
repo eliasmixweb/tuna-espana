@@ -1,11 +1,35 @@
-
-.aligncenter {
+.bloqIzq{
+display:block;
+float:left;
+border: 20px solid #000000;
+}
+.bloqCentro {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	border: 20px solid #000000;
 }
-  }
+.bloqDer{
+display:block;
+border: 20px solid #000000;
+}
 
+.bloq100{
+display:block;
+width:100%;
+}
+.bloq80 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+}
+.bloq70 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:70%;
+}
   /*.exampleText {
     margin:0;
     padding:0;
