@@ -18,6 +18,8 @@ font-family: "Times New Roman", Times, Arial, serif;
 color: white;
 background-color: black;
 font-size:50px; /* tamaño por defecto es 16px*/
+-webkit-order: 2;
+        order: 2;
 }
 
 
@@ -27,13 +29,23 @@ font-size:50px; /* tamaño por defecto es 16px*/
          flex-flow: column;
 }
 
-article, nav, aside {
- /* Return them to document order */
- -webkit-order: 0;
-         order: 0;
-}
+nav {
+ -webkit-min-height: 50px;
+ -webkit-max-height: 50px;
+ min-height: 50px;
+ max-height: 50px;
+ order:1;
 
-nav, aside, header, footer {
+}
+aside {
+ -webkit-min-height: 50px;
+ -webkit-max-height: 50px;
+ min-height: 50px;
+ max-height: 50px;
+ order:3;
+
+}
+header, footer {
  -webkit-min-height: 50px;
  -webkit-max-height: 50px;
  min-height: 50px;
