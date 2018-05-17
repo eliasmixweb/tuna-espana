@@ -34,7 +34,7 @@ nav {
  -webkit-max-height: 50px;
  min-height: 50px;
  max-height: 50px;
- order:1;
+ -webkit-order:1;
 
 }
 aside {
@@ -42,7 +42,7 @@ aside {
  -webkit-max-height: 50px;
  min-height: 50px;
  max-height: 50px;
- order:3;
+ -webkit-order:3;
 
 }
 header, footer {
