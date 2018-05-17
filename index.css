@@ -30,6 +30,7 @@ article {
   /* NO PONER MARGEN AUTO PUES SE DESBORDA article */
     margin: 2px;
     padding: 5px;
+    font-family: "Times New Roman", Times, Arial, serif;
     color: white;
     /*border: 1px solid #cccc33;*/
     border-radius: 7pt;
@@ -71,42 +72,7 @@ footer {
    display:block;
    text-align:center;
 }
-#cabe{
-margin: 2px;
-display:block;
-border-radius: 7pt;
-background: #ffeebb;
 
-}
-#cabecera {
-   margin: 0px;
-   padding: 0px;
-   display: flex;
-   flex-flow: row;
-}
-
-
-.flotante1{
-   border: 1px solid #ffffff;
-   margin: 1%;
-   flex:1 1 40%;
-   order:0;
-   color: white;
-}
-.flotante2{
-  border: 1px solid #ffffff;
-  margin: 1%;
-  flex:1 1 20%;
-  order:1;
-  color: white;
-}
-.flotante3{
-   border: 1px solid #ffffff;
-   margin: 1%;
-   flex:1 1 40%;
-   order:2;
-   color: white;
-}
 
 
      /*No poner heigth pues se descentra.La suma de los margenes izquierdo y derecho debe ser igual a width. A lo que sigue no hacer caso de momento -> Como la proporcion entre la base y el alto debe ser 16/9 = 56.25% por regla de tres la altura será 0.70*9/16 = 39.38% */

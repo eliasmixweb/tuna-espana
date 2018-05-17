@@ -12,7 +12,7 @@ font-size:50px; /* tamaño por defecto es 16px*/
 .article {
 width:100%;
 height:auto;
-margin:0px;
+margin:2px;
 padding: 5px;
 font-family: "Times New Roman", Times, Arial, serif;
 color: white;
@@ -39,22 +39,6 @@ nav, aside, header, footer {
  min-height: 50px;
  max-height: 50px;
 
-}
-.videoflex70 {
-  width:100%;
-  background:white;
-  color:white;
-  margin: 0% 0% 0% 0%;
-  padding:0%;
-}
-.imagenflex70 {
- width:90%;
- margin:0% 5% 0% 5%;
- background:white;
- color:white;
- padding:0%;
-
-}
 }
 
   /*.exampleText {

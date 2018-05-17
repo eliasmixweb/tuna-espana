@@ -36,6 +36,41 @@ width:100%;
 	margin-right: auto;
 	width:50%;
 }
+#cabe{
+margin: 2px;
+display:block;
+border-radius: 7pt;
+background: #ffeebb;
+
+}
+#cabecera {
+   margin: 0px;
+   padding: 0px;
+   display: flex;
+   flex-flow: row;
+}
+
+.flotante1{
+   border: 1px solid #ffffff;
+   margin: 1%;
+   flex:1 1 40%;
+   order:0;
+   color: white;
+}
+.flotante2{
+  border: 1px solid #ffffff;
+  margin: 1%;
+  flex:1 1 20%;
+  order:1;
+  color: white;
+}
+.flotante3{
+   border: 1px solid #ffffff;
+   margin: 1%;
+   flex:1 1 40%;
+   order:2;
+   color: white;
+}
   /*.exampleText {
     margin:0;
     padding:0;
