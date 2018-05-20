@@ -1,7 +1,7 @@
 
 body {
-   font: 1em Helvetica;
-   background: #000000;
+
+   background: black;
 }
 
 #main {
@@ -14,6 +14,11 @@ body {
 }
 
 nav {
+li{	list-style:	none;	}
+li{	list-style:	square	outsite;	}
+li{	list-style-image:	url("punto.jpg");	}
+li{	list-style-type:	upper-roman;	}
+
    margin: 2px;
    padding: 5px;
    border: 1px solid #8888bb;
@@ -55,11 +60,12 @@ aside {
 }
 
 header {
-   padding: 0px;
-   margin:0;
+  margin: 4px;
+  padding: 5px;
    border: 0 solid #eebb55;
    border-radius: 7pt;
    background: black;
+   min-height: 50px;
 
 }
 footer {
