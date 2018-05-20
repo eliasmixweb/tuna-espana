@@ -1,3 +1,12 @@
+body {
+margin:0px;
+padding: 5px;
+font-family: "Times New Roman", Times, Arial, serif;
+color: white;
+background-color: black;
+font-size:1.2em; /* tamaño por defecto es 16px*/
+}
+
 /* Selecciona cualquier <a> que esté siendo activado */
 a:active {
   color: red;
@@ -103,6 +112,11 @@ max-width: 100%;
    border: inset;
    object-fit: fill;
 }
+.flotante15:hover{
+cursor:pointer;
+border-radius: 40%;
+}
+
 img{
 max-width: 100%;
 align-items: flex-end;
