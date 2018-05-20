@@ -82,18 +82,18 @@ max-width: 100%;
   object-fit: fill;
 }
 .flotante70{
-   border: 1px solid #ffffff;
+
    margin: 1%;
    flex:1 1 70%;
    order:1;
    color: white;
    width: 100%;
    max-width: 100%;
-   border: inset;
+
    object-fit: fill;
 }
 .flotante15{
-   border: 1px solid #ffffff;
+
    margin: 1%;
    flex:1 1 15%;
    order:1;
