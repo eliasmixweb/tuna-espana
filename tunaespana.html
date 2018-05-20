@@ -7,9 +7,9 @@
   <meta charset="UTF-8">
   <link id="modo" rel="stylesheet" href="escritorio.css" />
   <link rel="stylesheet" href="general.css" />
-  <link rel="stylesheet" media="(max-device-width:6in)" ref="movil.css" />
+  <link id="modo2" rel="stylesheet" media="screen and (min-width:800px)" href="movil.css" />
   <script>
-    var jsmodo;
+    var jsmodo="";
 
     function movil(jsmodo) {
       jsmodo = "movil.css"
@@ -25,7 +25,16 @@
       document.getElementById("modo").href = jsmodo;
       return jsmodo;
     }
+    var cad = document.getElementById("modo2").href;
+    cad = cad.slice(-9);
 
+    if (jsmodo =="") {
+      if (cad == "movil.css") {
+      jsmodo = "movil.css"
+      }
+      jsmodo = "escritorio.css"
+    }
+alert(jsmodo)
     if (jsmodo == "movil.css" | jsmodo == "escritorio.css") {
       document.getElementById("modo").href = jsmodo;
     }
