@@ -1,15 +1,5 @@
-
-html{
-font-size: 40px;
-}
 body {
-width:100%;
-height:auto;
-margin:0px;
-padding: 5px;
-font-family: "Times New Roman", Times, Arial, serif;
-color: white;
-background-color: black;
+font-size: 2em;
 
 }
 .article {
