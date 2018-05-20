@@ -1,4 +1,7 @@
 
+html{
+font-size: 1.5em;
+}
 body {
 width:100%;
 height:auto;
@@ -17,7 +20,7 @@ padding: 5px;
 font-family: "Times New Roman", Times, Arial, serif;
 color: white;
 background-color: black;
-font-size:50px; /* tamaño por defecto es 16px*/
+/* font-size:50px;  tamaño por defecto es 16px*/
 -webkit-order: 2;
         order: 2;
 }
