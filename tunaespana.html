@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="general.css" />
   <link rel="stylesheet" media="(max-device-width:6in)" ref="movil.css" />
   <script>
-  var jsmodo = "escritorio.css";
-
+  var jsmodo;
   function movil(jsmodo) {
     jsmodo="movil.css"
     // Create an object:
@@ -25,11 +24,14 @@
       return jsmodo;
   }
 
-  if (document.getElementById("modo").href == jsmodo) {
-  } else {
-    jsmodo = "escritorio.css"
-      document.getElementById("modo").href=jsmodo;
-  }
+if (jsmodo == "movil.css" | jsmodo == "escritorio.css") {
+  document.getElementById("modo").href=jsmodo;
+} else {
+  
+}
+
+
+
   </script>
 </head>
 <!-- ************* Inicio cuerpo *******************-->
