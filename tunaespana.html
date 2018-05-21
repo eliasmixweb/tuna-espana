@@ -5,17 +5,20 @@
   <title>Tuna España</title>
   <link rel="icon" type="image/png" href="favicon.png" sizes="64x64" />
   <meta charset="UTF-8">
-  <link id="modo" rel="stylesheet" href="escritorio.css" />
+
   <link rel="stylesheet" href="general.css" />
+  <link id="modo" rel="stylesheet" media="screen and (min-width: 900px)" href="escritorio.css">
+<link id="modo2" rel="stylesheet" media="screen and (max-width: 900px)" href="movil.css">
 
   <script>
     var jsmodo="";
-
     function movil(jsmodo) {
       jsmodo = "movil.css"
       // Create an object:
       document.getElementById("modo").rel = "stylesheet";
       document.getElementById("modo").href = jsmodo;
+      document.getElementById("modo2").rel = "stylesheet";
+      document.getElementById("modo2").href = jsmodo;
       return jsmodo;
     }
 
@@ -23,12 +26,19 @@
       jsmodo = "escritorio.css"
       document.getElementById("modo").rel = "stylesheet";
       document.getElementById("modo").href = jsmodo;
+      document.getElementById("modo2").rel = "stylesheet";
+      document.getElementById("modo2").href = jsmodo;
       return jsmodo;
     }
-
-    if (jsmodo == "movil.css" | jsmodo == "escritorio.css") {
-      document.getElementById("modo").href = jsmodo;
+    if (jsmodo =="") {
     }
+    else {
+      document.getElementById("modo").rel = "stylesheet";
+      document.getElementById("modo").href = jsmodo;
+      document.getElementById("modo2").rel = "stylesheet";
+      document.getElementById("modo2").href = jsmodo;
+    }
+
   </script>
 </head>
 <!-- ************* Inicio cuerpo *******************-->
