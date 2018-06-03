@@ -1,0 +1,16 @@
+.caja{
+display: flex;
+flex-flow: row;
+background: green;
+height: 40px;
+}
+
+.celda, .celdita {
+	flex: 1 1 200px;
+	width: 100px;
+	max-width: 200px;
+	font-size: 1.8rem;
+	font-family: Arial;
+  background: red;
+	color:white;
+	}

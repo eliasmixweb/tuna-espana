@@ -1,7 +1,83 @@
-body {
-font-size: 50px;
-
+.cajafila {
+display: flex;
+flex-flow: row;
+flex-wrap: wrap;
+/*Alineación horizontal  */
+justify-content: space-around;
+/*Alineación vertical  */
+align-items: center;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  padding: 0px;
+  max-width: 100%;
+  border: 0px solid #8888bb;
+  border-radius: 0pt;
+  background-color: black;
+/*background-color: black; Si ponemos fondo no se ve el borde de la caja ni el fondo de las celdas*/
 }
+
+
+  .celdabotonesfila {
+  flex: 1 1 auto;
+  order: 1;
+  	height: 70px;
+  	max-height: 70px;
+  	margin: 4px;
+    padding: 0;
+    border: 3px solid #ffffff;
+  	border-radius: 3pt;
+    color: white;
+  }
+  .cajacolumna {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  /*Alineación horizontal  */
+  justify-content: space-between;
+  /*Alineación vertical  */
+  align-items: center;
+  margin-bottom: 5;
+  padding: 0px;
+
+  }
+  .celdabotonescolumna {
+  flex: 1 1 auto;
+  order: 1;
+    max-width: 200px;
+    margin: 2px;
+    padding: 0;
+    border: 3px solid #ffffff;
+    border-radius: 3pt;
+    color: white;
+    text-align: center;
+  }
+
+  .celdavideo {
+  flex: 1 1 auto;
+  order: 1;
+    margin: 4px;
+    padding: 0;
+    background-color: rgb(27, 27, 27);
+    align-items: baseline;
+  max-height: 500px;
+  }
+
+#celdanav0, #celdanav1, #celdanav2, #celdanav3, #celdanav4 {
+  	display:Block;
+    with:100%;
+}
+.celdasubnav {
+max-width: 100%;
+}
+.indice{
+  display:block;
+ min-width: 100px;
+ margin: 2px;
+ padding: 5px;
+ border-radius: 7pt;
+background-color: rgb(180, 200, 255);
+
+ }
 .article {
 width:100%;
 height:auto;
@@ -16,120 +92,12 @@ background-color: black;
 }
 
 
-
-#main, {
- display:         flex;
- -webkit-flex-flow: column;
-         flex-flow: column;
-}
-
-nav {
-margin: 2px;
-padding: 5px;
-border: 1px solid #8888bb;
-border-radius: 7pt;
-background: #ccccff;
- min-height: 100px;
-
- order:1;
-
-}
 aside {
 margin: 2px;
 padding: 5px;
-border: 1px solid #8888bb;
+border: 0px solid #8888bb;
 border-radius: 7pt;
- background: #ccccff;
- min-height: 100px;
+background: rgb(219, 193, 100);
+color:black;
  order:3;
-
 }
-header {
-margin: 4px;
-padding: 5px;
-min-height: 100px;
- border: 0 solid #eebb55;
- border-radius: 7pt;
- background: black;
- width:100%;
-
-}
-footer{
-margin: 4px;
-padding: 5px;
-min-height: 100px;
-border: 1px solid #eebb55;
-border-radius: 7pt;
-background: #ffeebb;
-display:block;
-text-align:center;
-width:100%;
-}
-  /*.exampleText {
-    margin:0;
-    padding:0;
-    writing-mode: vertical-rl;
-    background-color: yellow;
-    inline-size: 210px;
-    font-size:2em;
-  }
-
-ul.navbar {
-  list-style-type: none;
-  margin: 1em;
-  padding:0em;
-  position: fixed;
-  top: 0em;
-  left: 0em;
-  width: 12em;
-  z-index:1
-}
-
-h1{display: flow-root;
-  background:rgb(166, 165, 139) ;
-  color:#00F;
-  font-size:20px;
-  font-style: oblique;
-  font-family:"Times New Roman", Times, serif;
-  text-align:center;
-  text-decoration:underline;
-  text-transform:uppercase;
-  line-height:5em;}
-P{font-size: 2em;}
-.floatstop{clear:both;}
-ul.navbar li {
-  background: white;
-  margin: 1em 1em;
-  padding: 0.3em;
-  border-right: 1em solid black }
-ul.navbar a {
-  text-decoration: underline;; }
-a:link {
-  color: blue }
-a:visited {
-  color: purple }
-#experiencia{font-size:200%; }
-.destacado{color:blue;}
-strong{font-weight:	normal;}
-address {
-  font-size: 3em;
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: thin dotted; }
-  */
-  /* block significa que tomará espacio en la pagina y que puede tener otros valores de espacio aplicables como margen*/
-/*img.fondo1 {
-  position: absolute;
-  width: 100px;
-  top:400;
-  left:100;
-  margin: 15em 0em 0em 0em ;
-  z-index:2;   }
-img.fondo2{
-position:sticky;
-width: 200px;
-top:80;
-left:250;
-padding: 0em;
-}
-*/

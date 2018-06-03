@@ -1,13 +1,67 @@
-body {
-font-size: 30px;
-width:100%;
-height:auto;
-margin:0px;
-padding: 5px;
-font-family: "Times New Roman", Times, Arial, serif;
-color: white;
-background-color: black;
+.cajafila {
+display: flex;
+flex-flow: row;
+flex-wrap: wrap;
+/*Alineación horizontal  */
+justify-content: space-around;
+/*Alineación vertical  */
+align-items: center;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  padding: 0px;
+  max-width: 100%;
+  border: 0px solid #8888bb;
+  border-radius: 0pt;
+  background-color: black;
+/*background-color: black; Si ponemos fondo no se ve el borde de la caja ni el fondo de las celdas*/
 }
+
+
+  .celdabotonesfila {
+  flex: 1 1 auto;
+  order: 1;
+  	height: 70px;
+  	max-height: 70px;
+  	margin: 4px;
+    padding: 0;
+    border: 3px solid #ffffff;
+  	border-radius: 3pt;
+    color: white;
+  }
+  .cajacolumna {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  /*Alineación horizontal  */
+  justify-content: space-between;
+  /*Alineación vertical  */
+  align-items: center;
+  margin-bottom: 5;
+  padding: 0px;
+
+  }
+  .celdabotonescolumna {
+  flex: 1 1 auto;
+  order: 1;
+    max-width: 200px;
+    margin: 2px;
+    padding: 0;
+    border: 3px solid #ffffff;
+    border-radius: 3pt;
+    color: white;
+    text-align: center;
+  }
+
+  .celdavideo {
+  flex: 1 1 auto;
+  order: 1;
+    margin: 4px;
+    padding: 0;
+    background-color: rgb(27, 27, 27);
+    align-items: baseline;
+  max-height: 500px;
+  }
+
 #main {
    margin: 0px;
    padding: 0px;
@@ -16,23 +70,34 @@ background-color: black;
    -webkit-flex-flow: row;
            flex-flow: row;
 }
+#celdanav0, #celdanav1, #celdanav2, #celdanav3, #celdanav4 {
+    display:inline;
 
-nav {
-   min-width: 100px;
-   margin: 2px;
-   padding: 5px;
-   border: 1px solid #8888bb;
-   border-radius: 7pt;
-   background: #ccccff;
-   -webkit-flex: 1 1 15%;
-           flex: 1 1 15%;
-   -webkit-order: 1;
-           order: 1;
-  /*Significado de flex con 3 valores:  flex-grow / flex-shrink / flex-basis factor: crec. / contraccion / tamaño inicial  */
 }
+.celdasubnav {
+max-width: 50%;
 
+}
+.indice{
+-webkit-flex: 1 1 15%;
+        flex: 1 1 15%;
+-webkit-order: 1;
+        order: 1;
+flex-direction: row;
+min-width: 100px;
+margin: 0px;
+padding: 5px;
+border: 0px solid #8888bb;
+border-radius: 7pt;
+background-color: rgb(180, 200, 255);
+
+}
 article {
   /* NO PONER MARGEN AUTO PUES SE DESBORDA article */
+  -webkit-flex: 1 1 68%;
+          flex: 1 1 68%;
+  -webkit-order: 2;
+          order: 2;
     margin: 2px;
     padding: 5px;
     font-family: "Times New Roman", Times, Arial, serif;
@@ -40,44 +105,20 @@ article {
     /*border: 1px solid #cccc33;*/
     border-radius: 7pt;
     background: black;
-    -webkit-flex: 1 1 70%;
-            flex: 1 1 70%;
-    -webkit-order: 2;
-            order: 2;
+
 }
 
 aside {
-min-width: 100px;
-   margin: 2px;
-   padding: 5px;
-   border: 1px solid #8888bb;
-   border-radius: 7pt;
-   background: #ccccff;
    -webkit-flex: 1 1 15%;
            flex: 1 1 15%;
    -webkit-order: 3;
            order: 3;
-           flex-direction: row;
-
-}
-
-header {
-  margin: 4px;
-  padding: 5px;
-   border: 0 solid #eebb55;
-   border-radius: 7pt;
-   background: black;
-   min-height: 100px;
-
-}
-footer {
-   margin: 4px;
-   padding: 5px;
-   min-height: 100px;
-   border: 1px solid #eebb55;
-   border-radius: 7pt;
-   background: #ffeebb;
-   display:block;
-   text-align:center;
-
+    flex-direction: row;
+    min-width: 100px;
+     margin: 2px;
+     padding: 5px;
+    border: 0px solid #8888bb;
+    border-radius: 7pt;
+    background: rgb(219, 193, 100);
+    color:black;
 }

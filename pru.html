@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="pru.css">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body id="cuerpo">
+    <header id="portada"></header>
+    <div id="caja" class="caja">
+      <span id="celda" class="celda">TunaEspaña</span>
+    </div>
+<aside id="noticias"></aside>
+  </body>
+  <script>
+  // Inserta portada
+  var a= document.getElementById("portada").innerHTML =
+  '<a href="./Media/Cabeceras/Portada1272x256.png?raw=true"><img class="bloq100" src="./Media/Cabeceras/Portada1272x256.png?raw=true" /></a>'
+  // Inserta aside
+
+
+  var para = document.createElement("object");
+  para.data="./html/noticias.html";
+  para.width="100%";
+  para.height="100%"
+  var element = document.getElementById("cuerpo");
+  element.appendChild(para);
+
+  </script>
+</html>

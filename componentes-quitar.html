@@ -9,24 +9,121 @@
   <link rel="stylesheet" href="general.css" />
   <link id="modo" rel="stylesheet" media="screen and (min-width: 800px)" href="escritorio.css">
   <link id="modo2" rel="stylesheet" media="screen and (max-width: 800px)" href="movil.css">
-  <script type="text/javascript" src="js/nav.js"></script>
+
+  <script>
+    var jsmodo = "";
+
+    function movil(jsmodo) {
+      jsmodo = "movil.css";
+      // Create an object:
+      document.getElementById("modo").rel = "stylesheet";
+      document.getElementById("modo").href = jsmodo;
+      document.getElementById("modo2").rel = "stylesheet";
+      document.getElementById("modo2").href = jsmodo;
+      return jsmodo;
+    }
+
+    function escritorio(jsmodo) {
+      jsmodo = "escritorio.css";
+      document.getElementById("modo").rel = "stylesheet";
+      document.getElementById("modo").href = jsmodo;
+      document.getElementById("modo2").rel = "stylesheet";
+      document.getElementById("modo2").href = jsmodo;
+      return jsmodo;
+    }
+    if (jsmodo == "") {
+
+    } else {
+      document.getElementById("modo").rel = "stylesheet";
+      document.getElementById("modo").href = jsmodo;
+      document.getElementById("modo2").rel = "stylesheet";
+      document.getElementById("modo2").href = jsmodo;
+    }
+
+
+  </script>
 </head>
 <!-- ************* Inicio cuerpo *******************-->
-<body onload="portada();nav1();aside();footer();">
+  <header>
+    <a href="Media/Cabeceras/Portada1272x256.png?raw=true"><img class="bloq100" src="Media/Cabeceras/Portada1272x256.png?raw=true" /></a>
+  </header>
+  <!-- PRESENTACION -->
+  <div class="cajafila" >
+    <div class="cajacolumna">
+      <a href="#header">
+        <div class="cajafila">
+          <img class="celdabotonesfila" onClick="movil()" src="Media/iconomovil.png" alt="Media/iconomovil.png" target="_blank" />
+      </a>
+      <a href="#header">
+          <img class="celdabotonesfila" onClick="escritorio()" src="Media/iconoescritorio.png" alt="Media/iconoescritorio.png" target="_blank" />
+          </a>
+      </div>
+    </div>
+    <!-- poner el atributo autoplay cuando esté terminada la página -->
+    <div class="cajacolumna">
+      <video class="celdavideo" controls=1 loop=1 muted playsinline>
+      <source src="Media/presentacion.mp4"  type="video/mp4">
+      </video>
+    </div>
+    <div class="cajacolumna">
+      <a href="Media/Cabeceras/marcaespana.png?raw=true">
+          <img class="celdabotonescolumna"  src="Media/Cabeceras/marcaespana.png?raw=true" alt="Media/Cabeceras/marcaespana.png" />
+        </a>
+      <a href="Media/Cabeceras/solicitudadmision.png">
+          <img class="celdabotonesfila" src="Media/Cabeceras/solicitudadmision.png?raw=true" alt="solicitudadmision.png" />
+        </a>
+      <a href="Media/Cabeceras/proximoevento.png?raw=true"><img class="celdabotonescolumna"  src="Media/Cabeceras/proximoevento.png?raw=true" alt="proximoevento.png" /></a>
+      <p class="celdabotonescolumna"></p>
+
+    </div>
+  </div>
   <!--  FILA DE BOTONES-->
+<nav id="nav1" >
+    <span id="celdanav1"
+    onclick="subnavClick(1)"
+    onmouseenter="subnavOver(1)"
+     >TunaEspaña&nbsp;<sub>&#9662;</sub></span>
+     <div id="subnav1" class="subnav1" >
+         <a class="celdasubnav" href="">Descripción</a>
+         <a class="celdasubnav" href="">Componentes</a>
+         <a class="celdasubnav" href="">Marca España</a>
+         <a class="celdasubnav" href="">Sello de Correos</a>
+     </div>
+    <span id="celdanav2"
+    onclick="subnavClick(2)"
+    onmouseenter="subnavOver(2)"  >Eventos&nbsp;<sub>&#9662;</sub></span>
+    <div id="subnav2"  class="subnav2" >
+        <a class="celdasubnav" href="">Juntamentos</a>
+        <a class="celdasubnav" href="">Actuaciones</a>
+        <a class="celdasubnav" href="">Insignias de oro  Rectores</a>
+        <a class="celdasubnav" href="">Insignias de oro Caballero Español</a>
+        <a class="celdasubnav" href="">Rondas a Patronas</a>
+        <a class="celdasubnav" href="">Madrinas</a>
+        <a class="celdasubnav" href="">Rondas Cruces de Mayo</a>
+        <a class="celdasubnav" href="">Rondas a sus Mayores</a>
+        <a class="celdasubnav" href="">Conciertos Benéficos</a>
+        <a class="celdasubnav" href="">Rondas a Centros Penitenciarios</a>
+    </div>
+    <span id="celdanav3"
+    onclick="subnavClick(3)"
+    onmouseenter="subnavOver(3)"   >Archivo&nbsp;<sub>&#9662;</sub></span>
+    <div id="subnav3" class="subnav3" >
+        <a class="celdasubnav" href="">item2-1 </a>
+        <a class="celdasubnav" href="">item2-2 </a>
+    </div>
+    <span id="celdanav4"
+    onclick="subnavClick(4)"
+    onmouseenter="subnavOver(4)"  >Otros&nbsp;<sub>&#9662;</sub></span>
 
-<header id="portada" onmouseenter="subnav_ocultar()">
-<!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá la cabecera -->
-</header>
-
-  <nav id="nav1">
-<!-- (Java) Barra de menú general  -->
+    <div id="subnav4" class="subnav4" >
+        <a class="celdasubnav" href="">item2-1 </a>
+        <a class="celdasubnav" href="">item2-2 </a>
+    </div>
   </nav>
-<div id='main' onmouseenter="subnav_ocultar()">
+
+<div id='main' onmouseover="subnav_ocultar()">
     <div class="indice">
-      <p style="text-align:center; color:black;">ÍNDICE
-        <hr>
-      </p>
+      <p style="text-align:center; color:black;">ÍNDICE <hr ></p>
       <a class="celdaindice" href="#descripcion">Descripción </a>
       <a class="celdaindice" href="#boe">BOE Sello Tuna España</a>
       <a class="celdaindice" href="#marcaespana">Vídeo entrega Marca España</a>
@@ -167,15 +264,57 @@
         Universidades Españolas D. Manuel José López Pérez</span>
         </p>
     </article>
-    <aside id="aside" >
-    <!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá el archivo externo 'html/noticias.html' que puede ser creado externamente por Word y guardado en formato html (filtrado)  -->
-    </aside>
-
+    <aside style="text-align:center; color:black;">OTRAS NOTICIAS<hr  style="border-color:gray;"></aside>
   </div>
-  <footer id="footer">
-<!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá el pie de página  -->
+  <footer>
+    <p>
+      &copy; 2018 Tuna España &#8211; Universitaria <a href="http://www.tunaespana.es/wp-login.php">Acceder</a>
+    </p>
   </footer>
 </body>
 
+<script>
+function subnavClick(n){
+var a= "celdanav" + n;
+var b="subnav" + n;
+  nav_verde();
+  subnav_ocultar();
+  var x = document.getElementById(a);
+  x.style.background= "white";
+  x.style.color= "rgb(0,100,0)" ;
+  document.getElementById(b).style.display = "block";
+}
+function subnavOver(n){
+  var a= "celdanav" + n;
+  var b="subnav" + n;
+  nav_verde();
+  subnav_ocultar();
+  var x = document.getElementById(a);
+  x.style.background= "white";
+  x.style.color= "rgb(0,100,0)" ;
+}
+
+function nav_verde(){
+  var x = document.getElementById("celdanav1");
+  x.style.background= "rgb(0,100,0)";
+  x.style.color= "white";
+  var x = document.getElementById("celdanav2");
+  x.style.background= "rgb(0,100,0)";
+  x.style.color= "white";
+  var x = document.getElementById("celdanav3");
+  x.style.background= "rgb(0,100,0)";
+  x.style.color= "white";
+  var x = document.getElementById("celdanav4");
+  x.style.background= "rgb(0,100,0)";
+  x.style.color= "white";
+}
+function subnav_ocultar(){
+  document.getElementById("subnav1").style.display = "none";
+  document.getElementById("subnav2").style.display = "none";
+  document.getElementById("subnav3").style.display = "none";
+  document.getElementById("subnav4").style.display = "none";
+  nav_verde();
+}
+</script>
 
 </html>
