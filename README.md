@@ -1,2 +1,2 @@
 # tuna-espana
-pruebas para la tuna
+código de prueba para la tuna
