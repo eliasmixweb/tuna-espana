@@ -1,72 +1,145 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <title>Tuna España</title>
+  <title>Marca España</title>
   <link rel="icon" type="image/png" href="favicon.png" sizes="64x64" />
   <meta charset="UTF-8">
-<link rel="stylesheet" href="index.css" />
-<link rel="stylesheet" media="(min-resolution: 200dpi)" href="indexMovil.css" />
-<link rel="stylesheet" href="general.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="general.css" />
+  <link id="modo" rel="stylesheet" media="screen and (min-width: 800px)" href="escritorio.css">
+  <link id="modo2" rel="stylesheet" media="screen and (max-width: 800px)" href="movil.css">
+  <script type="text/javascript" src="js/nav.js"></script>
 </head>
+<!-- ************* Inicio cuerpo *******************-->
 
-  <!-- ************* Inicio cuerpo *******************-->
-<body>
-  <a href="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/Portada1272x256.png?raw=true" ><img class="bloq100" src="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/Portada1272x256.png?raw=true" /></a>
+<body onload="portada();nav1();aside();footer();">
+  <!--  FILA DE BOTONES-->
 
-  <header>
-      <a href="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/pruebas.GIF?raw=true" ><img class="bloq70" src="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/pruebas.GIF?raw=true" alt="Cabeceras/pruebas.GIF"/></a>
+  <header id="portada" onmouseenter="subnav_ocultar()">
+    <!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá la cabecera -->
   </header>
 
-    <div id='cabe'>
-     <div id='cabecera'>
-      <div class="flotante1">
-        <a href="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/marcaespana.png?raw=true" ><img class="bloq100" src="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/marcaespana.png?raw=true" alt="marcaespana.png"/></a>
-      </div>
-    <div class="flotante2">
-      <a href="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/solicitudadmision.png?raw=true" ><img class="bloq100" src="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/solicitudadmision.png?raw=true" alt="solicitudadmision.png" /></a>
+  <nav id="nav1">
+    <!-- (Java) Barra de menú general  -->
+  </nav>
+  <div id='main' onmouseenter="subnav_ocultar()">
+    <div class="indice">
+      <p style="text-align:center; color:black;">ÍNDICE
+        <hr>
+      </p>
+      <a class="celdaindice" href="#discurso">Discurso de S.M. el Rey</a>
+      <a class="celdaindice" href="#lectura">Lectura del acta de Concesión</a>
+      <a class="celdaindice" href="#marcaespana">Vídeo entrega Marca España</a>
+      <a class="celdaindice" href="#murcia"> Conferencia sobre la tuna en Murcia</a>
+      <a class="celdaindice" href="#malaga">Tuna España en Universidad de Málaga</a>
+      <a class="celdaindice" href="#york">Tuna España en Nueva York</a>
+      <a class="celdaindice" href="#zaragoza">Tuna España en la Universidad de Zaragoza</a>
     </div>
-    <div class="flotante3">
-      <a href="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/proximoevento.png?raw=true" ><img class="bloq100" src="https://github.com/eliasmixweb/tuna-espana/blob/master/Media/Cabeceras/proximoevento.png?raw=true" alt="proximoevento.png" /></a>
-    </div>
-    </div>
-  </div>
-
-
-
-<div id='main'>
-  <nav>navega</nav>
     <article>
-    <p>Componentes TunaEspaña “Semel Tuno, Semper Tuno”</p>
-
-    <iframe width="560" height="315" class="bloq80"
-      <embed   src="https://www.youtube.com/embed/79JRQDK-sl0"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen >
-    </embed>
-    </iframe>
-
-    <p align="CENTER"><span style="color: #cc99ff;">Lectura del</span> <span style="color: #00ff00; font-size: 2em;"><strong>Acta de Concesión</strong> </span></p>
-    <p align="CENTER"><span style="color: #cc99ff; font-size: 1.8em;">de</span> <span style="font-size: 1.8em;"><span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;</strong></span> <span style="color: #cc99ff;">a</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEs</span>paña&#8221;</strong>
-
-    <iframe width="560" height="315" class="bloq80"
-    <embed width="100%" height="100%" src="https://www.youtube.com/embed/Tb-utjwjAzs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </embed>
-   </iframe>
-   <p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">D. José Gabriel Ruiz, Secretario General de la Delegacion de Gobierno, de la Region de Murcia lee el acta, en la que el Delegado de Gobierno D. Joaquín Bascuñana García, hace entrega de la Marca España, al Presidente y Fundador de TunaEspaña &#8220;Don Dudo&#8221;:  Reunidos los miembros competentes de la Oficina del Alto Comisionado del Gobierno para la</span> <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span></strong>, <span style="color: #cc99ff;">dependiente del</span> <span style="color: #ff00ff;"><strong>Ministerio de Asuntos Exteriores</strong></span><span style="color: #cc99ff;">, hacen Constar, que la</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</strong></span> <span style="color: #cc99ff;">cultiva y promueve los valores, que</span> <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span> </strong><span style="color: #cc99ff;">alienta y patrocina, por lo que constituye una valiosa aportación, a la promoción de la imagen de España, tanto dentro como fuera de nuestras fronteras, y <strong>declara</strong> en consecuencia, a</span><strong><span style="color: #ff0000;"> &#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span></strong><span style="color: #cc99ff;"> Institución de Interes para la</span> <span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;.</strong></span> </span></span></span></span></p>
-  <p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">Dado en Madrid a 19 de Diciembre de 2013.</span> </span></span></span></span></p>
-  <p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">Firmado : El Director de la Oficina del alto comisionado del gobierno para la</span> <strong><span style="color: #ff0000;">&#8220;Marca España</span></strong><span style="color: #cc99ff;">&#8220;. Y para que asi conste se hace entrega en la Delegacion del Gobierno de España en la Region de Murcia, Del Titulo que acredita dicho Reconocimiento.</span></span></span></span></span></p>
-
-  <a href="" ><img class="" src="" alt="" /></a>
+      <h2 id="discursorey">Tuna España & Marca España</h2>
+      <video class="bloq80" controls=1 playsinline>
+    <source src="https://r3---sn-o0n5oxu-hxne.googlevideo.com/videoplayback?mn=sn-o0n5oxu-hxne%2Csn-npoeen7y&ip=110.232.83.115&mm=31%2C29&sparams=clen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpcm2%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&itag=18&mime=video%2Fmp4&dur=574.438&id=o-AIDE2R8WfnRb3oiyTR55a8-bp_QK1tFzceu2JA_dwENV&mv=m&pl=24&mt=1528030147&requiressl=yes&ms=au%2Crdu&gir=yes&c=WEB&ipbits=0&pcm2=yes&lmt=1447762102293379&signature=291B7A4456421CB3653F516DE93FBEA4AD416E71.5B75F95B124908F8B8DB6AA2C986EB815121DA8D&source=youtube&fvip=3&clen=26310389&ratebypass=yes&expire=1528051829&initcwndbps=316250&key=yt6&ei=FOQTW8i6KOquowOA0rGYCA&video_id=79JRQDK-sl0&title=Discurso+de+S.M.+el+Rey+tras+la+entrega+de+las+acreditaciones+de+Embajadores+de+la+Marca+Espa%C3%B1a"  >
+    </video>
+      <p style="text-align:center;">Discurso de S.M. el Rey tras la entrega de las acreditaciones de Embajadores de la Marca España</p>
 
 
+      <p align="CENTER"><span style="color: #cc99ff;">Lectura del</span> <span style="color: #00ff00; font-size: 2em;"><strong>Acta de Concesión</strong> </span></p>
+      <p align="CENTER"><span style="color: #cc99ff; font-size: 1.8em;">de</span> <span style="font-size: 1.8em;"><span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;</strong></span> <span style="color: #cc99ff;">a</span> <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEs</span>paña&#8221;</strong>
 
+        <video class="bloq80" poster="Media/marcaespana/marcaespana.png" controls=1 playsinline>
+        <source  src="https://r6---sn-x5guiapo3uxax-cbfee.googlevideo.com/videoplayback?source=youtube&mt=1528030660&mv=m&ratebypass=yes&fvip=6&ms=au%2Crdu&ip=109.224.7.134&lmt=1472401301289933&dur=107.972&itag=22&pl=24&initcwndbps=245000&mime=video%2Fmp4&c=WEB&mm=31%2C29&mn=sn-x5guiapo3uxax-cbfee%2Csn-4g5edn7z&ipbits=0&ei=KOYTW4WZI4TqWrOZtlA&signature=CAA74E482D7658BBDE48670B64CF91981A03E259.E33619F1072CE15189AD5413E3C26E25318940F5&key=yt6&id=o-APfCblQ7perbOB5-xiTps0BOZI-PB45E3AFj8szlxFFL&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&requiressl=yes&expire=1528052360&video_id=Tb-utjwjAzs&title=Entrega+de+Marca+Espa%C3%B1a+a+TunaEspa%C3%B1a+Tuna+Espa%C3%B1a" >
+        </video>
 
+        <p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">D. José Gabriel Ruiz, Secretario General de la Delegacion de Gobierno, de la Region de Murcia lee el acta, en la que el Delegado de Gobierno D. Joaquín Bascuñana García, hace entrega de la Marca España, al Presidente y Fundador de TunaEspaña &#8220;Don Dudo&#8221;:  Reunidos los miembros competentes de la Oficina del Alto Comisionado del Gobierno para la</span>          <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span></strong>, <span style="color: #cc99ff;">dependiente del</span> <span style="color: #ff00ff;"><strong>Ministerio de Asuntos Exteriores</strong></span><span style="color: #cc99ff;">, hacen Constar, que la</span>          <span style="color: #ff0000;"><strong>&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</strong>
+          </span> <span style="color: #cc99ff;">cultiva y promueve los valores, que</span> <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span> </strong><span style="color: #cc99ff;">alienta y patrocina, por lo que constituye una valiosa aportación, a la promoción de la imagen de España, tanto dentro como fuera de nuestras fronteras, y <strong>declara</strong> en consecuencia, a</span><strong><span style="color: #ff0000;"> &#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span></strong>
+          <span
+            style="color: #cc99ff;"> Institución de Interes para la</span> <span style="color: #ff0000;"><strong>&#8220;Marca España&#8221;.</strong></span> </span>
+            </span>
+            </span>
+            </span>
+        </p>
+        <p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">Dado en Madrid a 19 de Diciembre de 2013.</span> </span>
+          </span>
+          </span>
+          </span>
+        </p>
+        <p align="CENTER"><span style="color: #ff0000;"><span style="font-family: Arial;"><span style="font-size: 1em;"><span style="color: #000080;"><span style="color: #cc99ff;">Firmado : El Director de la Oficina del alto comisionado del gobierno para la</span> <strong><span style="color: #ff0000;">&#8220;Marca España</span></strong>
+          <span
+            style="color: #cc99ff;">&#8220;. Y para que asi conste se hace entrega en la Delegacion del Gobierno de España en la Region de Murcia, Del Titulo que acredita dicho Reconocimiento.</span>
+            </span>
+            </span>
+            </span>
+            </span>
+        </p>
 
+        <p style="text-align: center;"><span style="color: #000000;"><a href="Media/marcaespana/TunaEspaña-Marca-Españatunos.com-Certamen-Tuna-buen-tunar.jpg"><img class="bloq80" src="Media/marcaespana/TunaEspaña-Marca-Españatunos.com-Certamen-Tuna-buen-tunar.jpg" alt="TunaEspaña, Marca España,tunos.com, Certamen Tuna, buen tunar" width="649" height="288" srcset="Media/marcaespana/TunaEspaña-Marca-Españatunos.com-Certamen-Tuna-buen-tunar.jpg 649w, Media/marcaespana/TunaEspaña-Marca-Españatunos.com-Certamen-Tuna-buen-tunar-300x133.jpg 300w" sizes="(max-width: 649px) 100vw, 649px" /></a></span></p>
+        <p style="text-align: center;"><span style="color: #cc99ff; font-size: 14px;">Reunion en Madrid, Ministerio Asuntos Exteriores y Cooperacion: Don Ignacio Garcia-Valdecasa (Asesor Del Alto Comisionado del Gobierno para la <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span></strong>)
+          Don Niky Lauda (Vocal &#8220;TunaEspaña), Don Jose Angel Lopez Jorrin, Director Oficina del alto comisionado del Gobierno para La &#8220;Marca España&#8221;, con La Beca &#8220;TunaEspaña&#8221;, &#8220;Don Dudo&#8221; (Presidente-Fundador de
+          <strong><span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEspa</span>ña&#8221;)</span></strong>, Don Visedo (Secretario &#8220;TunaEspaña), Don RadioPita (Tesorero </span><span style="color: #cc99ff;"><span style="font-size: 14px;">&#8220;TunaEspaña&#8221;</span>
+          <span
+            style="font-size: 14px;">)</span>
+            </span>
+        </p>
+        <p style="text-align: center;"><span style="font-size: 6px; color: #000000;">.</span></p>
+        <p align="CENTER"><span style="color: #ff0000; font-size: 22px;"><strong>&#8220;Marca España&#8221;</strong> es una <strong>política de Estado.</strong></span></p>
+        <p style="text-align: center;"><span style="color: #cc99ff;">Su objetivo es <strong>mejorar la imagen de nuestro país</strong>, tanto en el interior como más allá de nuestras fronteras, en beneficio del bien común. En un mundo global, una <strong>buena imagen-país</strong> es un activo que sirve para respaldar la posición internacional de un Estado política, económica, cultural, social, científica y tecnológicamente.</span></p>
+        <p style="text-align: center;"><span style="color: #ff00ff; font-size: 14pt;"><span style="color: #00ff00;">Son</span> Embajadores de <span style="color: #00ff00;">&#8220;Marca España&#8221;</span> : <span style="color: #00ff00;">Rafael, Nadal, Placido Domingo, Fernando Alonso, Emilio Botin, Ferrán Adriá, José Carreras, Pau Gasol, Antonio Banderas, Real Madrid, Selección Española de Fútbol</span>,,,,,,,</span>
+        </p>
 
+        <a href="Media/marcaespana/03-Jose-Angel-Lopez-Jorrin-director-Oficina-Alto-Comisionado-para-la-marca-España-Don-Dudo-Presidente-Fundador-TunaEspaña-tunos.com-cancionero-tuna-certamen-tuna-bu.jpg">
+        <img class="bloq50" src="Media/marcaespana/03-Jose-Angel-Lopez-Jorrin-director-Oficina-Alto-Comisionado-para-la-marca-España-Don-Dudo-Presidente-Fundador-TunaEspaña-tunos.com-cancionero-tuna-certamen-tuna-bu.jpg" alt="03-Jose-Angel-Lopez-Jorrin-director-Oficina-Alto-Comisionado-para-la-marca-España-Don-Dudo-Presidente-Fundador-TunaEspaña-tunos.com-cancionero-tuna-certamen-tuna-bu"  />
+        </a>
+        <p style="text-align: center;"><span style="color: #cc99ff;"><strong>Don Jose Angel Lopez Jorrin</strong>, Director Oficina del alto comisionado del Gobierno para La &#8220;<strong><span style="color: #ffff00;">Marca</span> <span style="color: #ff0000;">España</span></strong>&#8220;,
+          con La Beca &#8220;TunaEspaña&#8221; y &#8220;<strong>Don Dudo&#8221; (</strong>Presidente-Fundador &#8220;<span style="color: #ff0000;"><strong>Tun<span style="color: #ffff00;">aEsp</span>aña</strong>
+          </span>&#8220;)</span>
+        </p>
+
+        <a href="Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-Bascuñana-1.jpg"><img class="bloqCentro" src="Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-Bascuñana-1.jpg" alt="TunaEspaña, Marca España, Delegacion de Gobierno, Joaquin Bascuñana, 1"  srcset="Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-Bascuñana-1.jpg 324w, Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-Bascuñana-1-261x300.jpg 261w" sizes="(max-width: 324px) 100vw, 324px" /></a>
+        <p align="CENTER"><span style="color: #c0c0c0; font-size: 14px;"><span style="font-family: Arial;"><strong>El Delegado del Gobierno D. <em>Joaquín Bascuñana</em> García, entrega a D. Dudo (Presidente &#8211; Fundador) el título que acredita a <span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span>
+          como institución de interés para la promoción de España y nuestra pertenencia a <span style="color: #ff0000;">&#8220;Marca España&#8221;</span>. </strong>
+          </span>
+          </span>
+        </p>
+
+        <a href="Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-BascuñanaDon-Dudo.jpg"><img class="bloq80" src="Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-BascuñanaDon-Dudo.jpg" alt="TunaEspaña, Marca España, Delegacion de Gobierno, Joaquin Bascuñana,Don Dudo" /></a>
+        <p align="CENTER"><span style="color: #c0c0c0;">D. Dudo (Presidente &#8211; Fundador) entrega  La beca de <strong><span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span>
+          </strong> al Delegado del Gobierno D. <em>Joaquín Bascuñana</em> García.</span>
+        </p>
+        <a href="Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-Bascuñana-Guardia-Civil-Policia-Nacional-Universidad.jpg"><img class="bloq100" src="Media/marcaespana/TunaEspaña-Marca-España-Delegacion-de-Gobierno-Joaquin-Bascuñana-Guardia-Civil-Policia-Nacional-Universidad.jpg" alt="TunaEspaña, Marca España, Delegacion de Gobierno, Joaquin Bascuñana, Guardia Civil, Policia Nacional, Universidad" /></a>
+        <br>
+        <p align="CENTER"><span style="color: #c0c0c0;">El Acto de entrega del título que  acredita a</span> <strong><span style="color: #ff0000;">&#8220;Tun<span style="color: #ffff00;">aEsp</span>aña&#8221;</span></strong><span style="color: #c0c0c0;">como institución de interés para la promoción de España y nuestra pertenencia a <strong><span style="color: #ff0000;">&#8220;Marca España&#8221;</span></strong>,
+          se realizó en la Delegación, de Gobierno de España, donde estuvieron representadas las tres instituciones del Estado Español, asi como La Universidad, y cuerpos de Seguridad del Estado (Policia Nacional, Guardia Civil)</span>
+        </p>
+        <br>
+        <a href="Media/marcaespana/TunaEspaña-Don-Dudo-Marca-España-carlos-ignacio-Espinosa-Celdran-photo_2017-05-08_16-29-13-dism.jpg" rel="attachment wp-att-32096"><img class="bloq80" src="Media/marcaespana/TunaEspaña-Don-Dudo-Marca-España-carlos-ignacio-Espinosa-Celdran-photo_2017-05-08_16-29-13-dism.jpg" alt="TunaEspaña, Don Dudo, Marca España, carlos ignacio Espinosa Celdran photo_2017-05-08_16-29-13 dism" /></a>
+        <br>
+        <a href="Media/marcaespana/TunaEspaña-Marca-España70.jpg"><img class="bloq100" src="Media/marcaespana/TunaEspaña-Marca-España70.jpg" alt="TunaEspaña, Marca España,70"/></a>
+        <br>
+
+        <p style="text-align: center;"><span style="color: #c0c0c0;"><strong><span style="color: #ffcc00;">Rueda de Prensa, en el Rectorado de La Universidad de Murcia</span></strong>, para comunicar a la comunidad Universitaria, y medios de Comunicacion, la obtención, de tan alta
+          distinción. El primero en comunicarlo, fue nuestro Excelentisimo y Magnifico Sr. <strong><span style="color: #ffcc00;">Rector de la Universidad</span> </strong>de Murcia <strong>D. Jose Antonio Cobacho Gomez</strong>, <strong>Catedratico de Derecho Civil</strong></span>
+        </p>
+
+        <p style="text-align: center;"><a href="Media/marcaespana/TunaEspaña-Rector-Universidad-Murcia-marca-españa.jpg"><img class="bloq80" src="Media/marcaespana/TunaEspaña-Rector-Universidad-Murcia-marca-españa.jpg" alt="TunaEspaña, Rector Universidad Murcia, marca españa" width="566" height="275" srcset="Media/marcaespana/TunaEspaña-Rector-Universidad-Murcia-marca-españa.jpg 566w, Media/marcaespana/TunaEspaña-Rector-Universidad-Murcia-marca-españa-300x145.jpg 300w" sizes="(max-width: 566px) 100vw, 566px" /></a>.</p>
+
+        <p style="text-align: center;"><span style="color: #cc99ff;"><span style="color: #c0c0c0;">Rueda de Prensa, en el Rectorado Universidad de Murcia, presidida por Excelentisimo y Magnifico Sr. <strong><span style="color: #ffcc00;">Rector de la Universidad </span></strong>de Murcia
+          <strong>D. Jose Antonio Cobacho Gomez</strong>, <strong>Catedratico de Derecho Civil</strong>, y por <strong> Dña. María de los Ángeles Esteban Abad</strong>,</span> <strong><span style="color: #ffcc00;">Vicerrectora de Coordinación y Comunicación</span></strong></span>
+        </p>
+        <a href="Media/marcaespana/TunaEspaña-Rector-Universidad-Murcia-marca-españa-Rectorado-Universidad-de-Murcia.jpg"><img class="bloq80" src="Media/marcaespana/TunaEspaña-Rector-Universidad-Murcia-marca-españa-Rectorado-Universidad-de-Murcia.jpg" alt="TunaEspaña, Rector Universidad Murcia, marca españa, Rectorado Universidad de Murcia" width="640" height="260" /></a>
+        <br>
+        <a href="http://www.tunaespana.es/wp-content/uploads/2012/06/MARCA-ESPAÑA-dism-cancionero-tuna-musica-tuna-don-dudo-tunaespaña-dism.jpg"><img class="bloq80" src="http://www.tunaespana.es/wp-content/uploads/2012/06/MARCA-ESPAÑA-dism-cancionero-tuna-musica-tuna-don-dudo-tunaespaña-dism.jpg" alt="MARCA ESPAÑA, dism, cancionero tuna, musica tuna, don dudo, tunaespaña, dism" width="554" height="393" /></a>
+        <a href="Media/marcaespana/TunaEspaña-Imposicion-Beca-Cancionero-Tuna-Musica-de-tuna-Universidad-Canciones-de-Tuna.jpg"><img class="bloq80" src="Media/marcaespana/TunaEspaña-Imposicion-Beca-Cancionero-Tuna-Musica-de-tuna-Universidad-Canciones-de-Tuna.jpg" alt="TunaEspaña-Imposicion-Beca-Cancionero-Tuna-Musica-de-tuna-Universidad-Canciones-de-Tuna" width="461" height="359" srcset="Media/marcaespana/TunaEspaña-Imposicion-Beca-Cancionero-Tuna-Musica-de-tuna-Universidad-Canciones-de-Tuna.jpg 461w, Media/marcaespana/TunaEspaña-Imposicion-Beca-Cancionero-Tuna-Musica-de-tuna-Universidad-Canciones-de-Tuna-300x233.jpg 300w" sizes="(max-width: 461px) 100vw, 461px" /></a></p>
 
     </article>
-    <aside>aside</aside>
-    </div>
-     <footer>
-       <p>
-    		&copy; 2018 Tuna España &#8211; Universitaria  <a href="http://www.tunaespana.es/wp-login.php">Acceder</a>
-        </p>
-      </footer>
-    </body>
-    </html>
+    <aside id="aside">
+      <!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá el archivo externo 'html/noticias.html' que puede ser creado externamente por Word y guardado en formato html (filtrado)  -->
+    </aside>
+
+  </div>
+  <footer id="footer">
+    <!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá el pie de página  -->
+  </footer>
+</body>
+
+</html>

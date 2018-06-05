@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Marca España</title>
+  <link rel="icon" type="image/png" href="favicon.png" sizes="64x64" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="general.css" />
+  <link id="modo" rel="stylesheet" media="screen and (min-width: 800px)" href="escritorio.css">
+  <link id="modo2" rel="stylesheet" media="screen and (max-width: 800px)" href="movil.css">
+  <script type="text/javascript" src="js/nav.js"></script>
+</head>
+<!-- ************* Inicio cuerpo *******************-->
+
+<body onload="portada();nav1();aside();footer();">
+  <!--  FILA DE BOTONES-->
+
+  <header id="portada" onmouseenter="subnav_ocultar()">
+    <!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá la cabecera -->
+  </header>
+
+  <nav id="nav1">
+    <!-- (Java) Barra de menú general  -->
+  </nav>
+  <div id='main' onmouseenter="subnav_ocultar()">
+    <div class="indice">
+      <p style="text-align:center; color:black;">ÍNDICE
+        <hr>
+      </p>
+      <a class="celdaindice" href="#discurso">Discurso de S.M. el Rey</a>
+      <a class="celdaindice" href="#lectura">Lectura del acta de Concesión</a>
+      <a class="celdaindice" href="#marcaespana">Vídeo entrega Marca España</a>
+      <a class="celdaindice" href="#murcia"> Conferencia sobre la tuna en Murcia</a>
+      <a class="celdaindice" href="#malaga">Tuna España en Universidad de Málaga</a>
+      <a class="celdaindice" href="#york">Tuna España en Nueva York</a>
+      <a class="celdaindice" href="#zaragoza">Tuna España en la Universidad de Zaragoza</a>
+    </div>
+    <article>
+
+<object style="z-index:9;background:white" width="100%" height="100%" data="cancionero/arrivederci_roma.html">
+
+</object>
+    </article>
+    <aside id="aside">
+      <!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá el archivo externo 'html/noticias.html' que puede ser creado externamente por Word y guardado en formato html (filtrado)  -->
+    </aside>
+
+  </div>
+  <footer id="footer">
+    <!-- NO BORRAR. Esta sección la genera Java automáticamente. En ella se incluirá el pie de página  -->
+  </footer>
+</body>
+
+</html>

@@ -17,6 +17,7 @@ body {
     border: 0px solid #8888bb;
     border-radius: 0pt;
     background: rgb(0,100,0);
+    text-align: center;
 }
 
 #celdanav0, #celdanav1, #celdanav2, #celdanav3, #celdanav4 {
@@ -43,10 +44,12 @@ body {
     opacity:1;
     color:black;
     display:none;
+    z-index: 9;
+    /* Este z-index es necesario pues de lo contrario al desplazar el ratón hacia abajo, éste entra en la zona del video del Rey y se produce el evento onmouseenter en el id="main"  */
     }
   .celdasubnav {
   display: block;
-  max-width: 50%;
+  max-width: 100%;
   margin:0px;
   padding: 5px 0px 5px 10px;
   border: 0px solid #ffffff;
@@ -54,8 +57,7 @@ body {
   color: black;
   text-align: left;
   text-decoration: none;
-  list-style-type: circle;
-  list-style-type: decimal;
+  text-align: center;
   font-family: Arial;
   }
   .celdasubnav:hover{
@@ -69,7 +71,7 @@ body {
   order: 1;
   	margin: 0px;
     padding: 8px;
-    
+
     color:black;
     font-size:80%;
     font-family: Verdana, serif;
@@ -116,6 +118,7 @@ footer {
 .bloq100 {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .bloq80 {
@@ -123,6 +126,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  height: auto;
 }
 
 .bloq70 {
@@ -130,6 +134,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  height: auto;
 }
 
 .bloq50 {
@@ -137,9 +142,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  height: auto;
 }
-
-
 
 
 .flotante50 {
